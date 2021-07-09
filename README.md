@@ -3,11 +3,7 @@
 
 ## Run Locally 
 
-npm i
-
-npm start
-
-
+`npm start`
 
 ## Contribution Rules
 
