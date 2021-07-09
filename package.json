@@ -1,0 +1,24 @@
+{
+	"name": "tailwind-components",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js && npx prettier --print-width 200 --write dist && npx serve dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/besoeasy/tailwind-components.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/besoeasy/tailwind-components/issues"
+	},
+	"homepage": "https://github.com/besoeasy/tailwind-components#readme",
+	"dependencies": {
+		"copy-dir": "^1.3.0",
+		"glob": "^7.1.7"
+	}
+}
