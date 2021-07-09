@@ -15,9 +15,16 @@ jobs:
       - name: Install 
         run: |
           npm i
-          node index.js && npx prettier --print-width 200 --write dist 
           
-      - name: Deploy 🚀
+      - name: Write 
+        run: |
+          node index.js
+          
+      - name: Lint 
+        run: |
+          npx prettier --print-width 200 --write dist 
+          
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: dist
