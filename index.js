@@ -2,12 +2,12 @@ var glob = require('glob');
 var fs = require('fs');
 var copydir = require('copy-dir');
 
-content = '
+content = `
 
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
 
-';
+`;
 
 fs.rmdir('dist', { recursive: true }, (err) => {
 	if (err) {
@@ -24,7 +24,7 @@ fs.rmdir('dist', { recursive: true }, (err) => {
 		},
 		function (err) {
 			if (err) throw err;
-            
+
 			glob('dist/**/*.html', function (er, files) {
 				files.forEach((filename) => {
 					console.log(filename);
