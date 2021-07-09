@@ -2,6 +2,8 @@ var glob = require('glob');
 var fs = require('fs');
 var copydir = require('copy-dir');
 
+
+// content to inject
 content = `
 
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -9,6 +11,9 @@ content = `
 
 `;
 
+
+
+//logic
 fs.rmdir('dist', { recursive: true }, (err) => {
 	if (err) {
 		throw err;
