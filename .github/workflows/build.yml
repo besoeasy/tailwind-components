@@ -27,9 +27,8 @@ jobs:
       - name: IPFS 
         id: ipfs
         run: |
-          npx ipfs-deploy dist
-
-      - name: DNSLink
-        run: npx dnslink-cloudflare -d besoeasy.com -l /ipfs/${{ steps.ipfs.outputs.hash }} -r _dnslink.tailwind
+          npx ipfs-deploy -d cloudflare dist
         env:
-          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+          IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+          IPFS_DEPLOY_CLOUDFLARE__ZONE: besoeasy.com
+          IPFS_DEPLOY_CLOUDFLARE__RECORD: tailwind
