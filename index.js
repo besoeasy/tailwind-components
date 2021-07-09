@@ -13,6 +13,7 @@ fs.rmdir('dist', { recursive: true }, (err) => {
 	if (err) {
 		throw err;
 	}
+	console.log('Removed Cache');
 
 	copydir(
 		'components',
@@ -25,10 +26,12 @@ fs.rmdir('dist', { recursive: true }, (err) => {
 		function (err) {
 			if (err) throw err;
 
-			glob('dist/**/*.html', function (er, files) {
-				files.forEach((filename) => {
-					console.log(filename);
+			console.log('Build New Cache');
 
+			glob('dist/**/*.html', function (er, files) {
+				console.log('Total Components : ' + files.length);
+
+				files.forEach((filename) => {
 					try {
 						fs.appendFile(filename, content, (err) => {
 							if (err) {
@@ -39,6 +42,8 @@ fs.rmdir('dist', { recursive: true }, (err) => {
 						console.error(err);
 					}
 				});
+
+				console.log('Tags Injected');
 			});
 		}
 	);
