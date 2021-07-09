@@ -1,0 +1,24 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Init
+        run: |
+         sudo apt-get update -y 
+         sudo apt install git -y
+     
+      - name: Install 
+        run: |
+          npm i
+          node index.js && npx prettier --print-width 200 --write dist 
+          
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: dist
+          folder: dist
