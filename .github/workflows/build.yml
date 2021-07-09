@@ -33,4 +33,4 @@ jobs:
         env:
           IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
           IPFS_DEPLOY_CLOUDFLARE__ZONE: besoeasy.com
-          IPFS_DEPLOY_CLOUDFLARE__RECORD: tailwind
+          IPFS_DEPLOY_CLOUDFLARE__RECORD: _dnslink.tailwind
