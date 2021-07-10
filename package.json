@@ -1,7 +1,7 @@
 {
 	"name": "tailwind-components",
 	"version": "1.0.0",
-	"description": "",
+	"description": "tailwind-components",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js && npx prettier --print-width 200 --write dist && npx serve dist"
