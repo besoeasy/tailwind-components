@@ -1,7 +1,7 @@
 # Tailwind CSS Components
 
 
-## Run Locally 
+## Run Locally
 
 `npm start`
 
