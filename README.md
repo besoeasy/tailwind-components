@@ -1,7 +1,7 @@
 # Tailwind CSS Components
 
 
-## Run Locally
+## View Offline
 
 `npm start`
 
