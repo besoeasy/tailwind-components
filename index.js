@@ -2,7 +2,6 @@ var glob = require('glob');
 var fs = require('fs');
 var copydir = require('copy-dir');
 
-
 // content to inject
 content = `
 
@@ -10,8 +9,6 @@ content = `
 <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
 
 `;
-
-
 
 //logic
 fs.rmdir('dist', { recursive: true }, (err) => {
