@@ -20,7 +20,7 @@ jobs:
           npm i
           npm run build
           
-      - name: Upload
+      - name: Upload IPFS
         env:
          IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
          IPFS_DEPLOY_CLOUDFLARE__ZONE: besoeasy.com
