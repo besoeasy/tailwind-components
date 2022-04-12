@@ -10,14 +10,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Init
-        run: |
-         sudo apt-get update -y 
-         sudo apt install git -y
-
       - name: Install
         run: |
-          npm i
+         npm i
+
+      - name: Build
+        run: |
           npm run build
           
       - name: Upload IPFS
