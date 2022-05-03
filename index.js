@@ -2,10 +2,8 @@ var fs = require('fs');
 var glob = require('glob');
 
 var content = `
-
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
-
 `;
 
 function deletedirectory(path) {
