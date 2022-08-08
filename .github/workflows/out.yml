@@ -22,8 +22,6 @@ jobs:
          IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
          IPFS_DEPLOY_CLOUDFLARE__ZONE: besoeasy.com
          IPFS_DEPLOY_CLOUDFLARE__RECORD: _dnslink.tailwind.besoeasy.com
-         IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.pAPI }}
-         IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.pSAPI }}
 
         run: |
-          npx ipfs-deploy -p pinata -d cloudflare ./dist
+          npx ipfs-deploy -d cloudflare ./dist
