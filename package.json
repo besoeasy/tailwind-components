@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "node index.js && npx prettier --print-width 200 --write dist",
-                "start": "npx serve dist"
+		"start": "npx serve dist"
 	},
 	"repository": {
 		"type": "git",

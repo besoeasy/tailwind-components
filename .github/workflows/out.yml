@@ -12,7 +12,7 @@ jobs:
 
       - name: Install
         run: |
-         npm i
+         npm ci
       - name: Build
         run: |
           npm run build
