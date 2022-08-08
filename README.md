@@ -8,7 +8,8 @@
 
 https://tailwind.besoeasy.com
 
-Please take your time to add your components as well, fork this repo and add your components and push
+Please take your time to add your components as well, fork this repo and add your components and push. I plan to add 1 tailwind component each day !
+
 
 ## Rules to contribute
 
