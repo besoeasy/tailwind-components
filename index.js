@@ -34,7 +34,8 @@ function copydirectory(src, dest) {
 	});
 }
 
-async function main() {
+
+async function build_pages() {
 	await deletedirectory('./dist/');
 	await copydirectory('./components/', './dist/');
 
@@ -42,6 +43,8 @@ async function main() {
 		console.log('Total Components : ' + files.length);
 
 		files.forEach((filename) => {
+			console.log(filename);
+
 			try {
 				fs.appendFile(filename, content, (err) => {
 					if (err) {
@@ -55,6 +58,36 @@ async function main() {
 
 		console.log('Tags Injected');
 	});
+
 }
 
-main();
+
+async function build_index() {
+	var filesnames = await glob.sync('dist/**/*.html');
+
+	filesnames.forEach((filename) => {
+
+		newf = filename.replace('dist/', 'https://tailwind.besoeasy.com/')
+		newn = filename.replace('dist/', '')
+
+		mainIndex += `<br><a href="${newf}">${newn}</a>`;
+	})
+
+	console.log(mainIndex);
+
+	fs.writeFile('./dist/index.html', mainIndex, (err) => {
+		if (err) {
+			console.error(err);
+		}
+	})
+}
+
+
+let mainIndex = ''
+
+async function main() {
+	await build_pages();
+	await build_index();
+}
+
+main()
