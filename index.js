@@ -73,8 +73,6 @@ async function build_index() {
 		mainIndex += `<br><a href="${newf}">${newn}</a>`;
 	})
 
-	console.log(mainIndex);
-
 	fs.writeFile('./dist/index.html', mainIndex, (err) => {
 		if (err) {
 			console.error(err);
