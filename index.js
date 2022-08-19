@@ -93,7 +93,21 @@ async function build_index() {
 		mainIndex += `<a href="${newf}" class="px-4 py-2 mr-5 mt-5 text-base rounded-full text-white bg-blue-400 ">${nameS}</a>`;
 	})
 
-	var template = `<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"><div class="py-40 px-2 m-auto container" >${mainIndex}</div>`;
+	var template = `<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<section class="w-full px-8 text-gray-700 bg-white body-font tails-selected-element">
+    <div class="container flex flex-col items-center justify-between py-5 mx-auto md:flex-row">
+
+        <a href="https://tailwind.besoeasy.com/" class="inline-block font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer focus:no-underline">
+Tailwind CSS Components        </a>
+        <div class="inline-flex items-center ml-5 space-x-6 lg:w-2/5 lg:justify-end lg:ml-0">
+            <a href="https://github.com/besoeasy/tailwind-components" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-purple-600 border border-transparent shadow-sm rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-700" data-rounded="rounded-xl" data-primary="purple-600">
+                GITHUB
+            </a>
+        </div>
+
+    </div>
+</section>
+<div class="py-20 px-2 m-auto container" >${mainIndex}</div>`;
 
 	fs.writeFile('./dist/index.html', template, (err) => {
 		if (err) {
