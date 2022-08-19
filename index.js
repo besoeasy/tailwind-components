@@ -61,19 +61,41 @@ async function build_pages() {
 
 }
 
+let mainIndex = "";
+
 
 async function build_index() {
 	var filesnames = await glob.sync('dist/**/*.html');
+
+	let dummyOk = null;
+
 
 	filesnames.forEach((filename) => {
 
 		newf = filename.replace('dist/', 'https://tailwind.besoeasy.com/')
 		newn = filename.replace('dist/', '')
 
-		mainIndex += `<br><a href="${newf}">${newn}</a>`;
+		var parts = newn.split('/');
+
+		console.log(parts[0]);
+
+		if (dummyOk !== parts[0]) {
+			mainIndex += `<br>
+            <div class="py-20 leading-none text-teal text-3xl uppercase">
+			${parts[0]}
+		    </div>
+            `
+		}
+
+		dummyOk = parts[0];
+		var nameS = parts[1].split('.html')[0];
+
+		mainIndex += `<a href="${newf}" class="px-4 py-2 mr-5 mt-5 text-base rounded-full text-white bg-blue-400 ">${nameS}</a>`;
 	})
 
-	fs.writeFile('./dist/index.html', mainIndex, (err) => {
+	var template = `<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"><div class="py-40 px-2 m-auto container" >${mainIndex}</div>`;
+
+	fs.writeFile('./dist/index.html', template, (err) => {
 		if (err) {
 			console.error(err);
 		}
@@ -81,7 +103,6 @@ async function build_index() {
 }
 
 
-let mainIndex = ''
 
 async function main() {
 	await build_pages();
