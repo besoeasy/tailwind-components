@@ -34,7 +34,6 @@ function copydirectory(src, dest) {
 	});
 }
 
-
 async function build_pages() {
 	await deletedirectory('./dist/');
 	await copydirectory('./components/', './dist/');
@@ -58,47 +57,39 @@ async function build_pages() {
 
 		console.log('Tags Injected');
 	});
-
 }
 
-let mainIndex = "";
-
+let mainIndex = '';
 
 async function build_index() {
 	var filesnames = await glob.sync('dist/**/*.html');
 
 	let dummyOk = null;
 
-
 	filesnames.forEach((filename) => {
-
-		newf = filename.replace('dist/', 'https://tailwind.besoeasy.com/')
-		newn = filename.replace('dist/', '')
+		newf = filename.replace('dist/', 'https://tailwind.besoeasy.com/');
+		newn = filename.replace('dist/', '');
 
 		var parts = newn.split('/');
 
 		console.log(parts[0]);
 
 		if (dummyOk !== parts[0]) {
-			mainIndex += `<br>
-            <div class="py-20 leading-none text-teal text-3xl uppercase">
-			${parts[0]}
-		    </div>
-            `
+			mainIndex += `<div class="pb-20 leading-none text-4xl uppercase">${parts[0]}</div>`;
 		}
 
 		dummyOk = parts[0];
 		var nameS = parts[1].split('.html')[0];
 
-		mainIndex += `<a href="${newf}" class="px-4 py-2 mr-5 mt-5 text-base rounded-full text-white bg-blue-400 ">${nameS}</a>`;
-	})
+		mainIndex += `<div class="m-5 uppercase"><a href="${newf}" class="text-xl">${nameS}</a></div>`;
+	});
 
-	var template = `<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	var template = `
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<section class="w-full px-8 text-gray-700 bg-white body-font tails-selected-element">
     <div class="container flex flex-col items-center justify-between py-5 mx-auto md:flex-row">
 
-        <a href="https://tailwind.besoeasy.com/" class="inline-block font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer focus:no-underline">
-Tailwind CSS Components        </a>
+        <a href="https://tailwind.besoeasy.com/" class="inline-block font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer focus:no-underline">Tailwind CSS Components</a>
         <div class="inline-flex items-center ml-5 space-x-6 lg:w-2/5 lg:justify-end lg:ml-0">
             <a href="https://github.com/besoeasy/tailwind-components" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-purple-600 border border-transparent shadow-sm rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-700" data-rounded="rounded-xl" data-primary="purple-600">
                 GITHUB
@@ -107,20 +98,19 @@ Tailwind CSS Components        </a>
 
     </div>
 </section>
-<div class="py-20 px-2 m-auto container" >${mainIndex}</div>`;
+
+<div class="py-20 px-2 m-auto max-w-5xl" >${mainIndex}</div>`;
 
 	fs.writeFile('./dist/index.html', template, (err) => {
 		if (err) {
 			console.error(err);
 		}
-	})
+	});
 }
-
-
 
 async function main() {
 	await build_pages();
 	await build_index();
 }
 
-main()
+main();
