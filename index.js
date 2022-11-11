@@ -75,7 +75,7 @@ async function build_index() {
 		console.log(parts[0]);
 
 		if (dummyOk !== parts[0]) {
-			mainIndex += `<div class="pb-20 leading-none text-4xl uppercase">${parts[0]}</div>`;
+			mainIndex += `<div class="py-20 leading-none text-4xl uppercase">${parts[0]}</div>`;
 		}
 
 		dummyOk = parts[0];
