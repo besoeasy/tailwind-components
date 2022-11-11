@@ -2,7 +2,7 @@
 
 ### View Offline
 
-`npm run build && npm run start`
+`npm run start`
 
 ### View Online
 
