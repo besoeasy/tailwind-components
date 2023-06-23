@@ -1,16 +1,6 @@
 # Tailwind CSS Components
 
-### View Offline
+Tailwind CSS Components are pre-built UI elements created using the Tailwind CSS framework. They provide ready-to-use design patterns like buttons, cards, forms, and more, simplifying web development. Developers can customize these components using Tailwind CSS classes or additional CSS styles. By leveraging these reusable building blocks, developers can create visually appealing and consistent user interfaces faster, promoting a cohesive design language throughout their projects.
 
-`npm run start`
 
-### View Online
-
-https://tailwind.besoeasy.com
-
-## Rules to contribute
-
-Please take your time to add your components as well, fork this repo and add your components and push.
-
-1. Upload All Media/Animation to IPFS
-2. Put whole component under a div tag
+Take your time to add your own parts. First, create a copy of this repository by forking it. Then, include your components and save the changes by pushing them to the repository.
