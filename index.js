@@ -35,6 +35,7 @@ function copyDirectory(src, dest) {
 async function buildPages() {
   await deleteDirectory('./dist/');
   await copyDirectory('./components/', './dist/');
+  await copyDirectory('./public/', './dist/public/');
 
   const files = await glob.sync('dist/**/*.html');
   console.log('Total Components:', files.length);
