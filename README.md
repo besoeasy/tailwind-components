@@ -4,3 +4,9 @@ Tailwind CSS Components are pre-built UI elements created using the Tailwind CSS
 
 
 Take your time to add your own parts. First, create a copy of this repository by forking it. Then, include your components and save the changes by pushing them to the repository.
+
+
+## Assets 
+
+use these assets to build 
+
