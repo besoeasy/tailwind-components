@@ -128,6 +128,7 @@ async function buildIndex() {
         <body class="m-auto container">
           ${mainIndex}
         </body>
+        <script defer src="https://cdn.tailwindcss.com"></script>
       </html>
     `;
 
