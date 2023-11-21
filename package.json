@@ -19,6 +19,7 @@
 	},
 	"homepage": "https://github.com/besoeasy/tailwind-components#readme",
 	"dependencies": {
+		"cheerio": "^1.0.0-rc.12",
 		"glob": "^7.1.7"
 	}
 }
