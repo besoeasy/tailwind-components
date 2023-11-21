@@ -81,9 +81,7 @@ async function buildPages() {
     console.log("Total Components:", files.length);
 
     for (const filename of files) {
-      console.log(filename);
-      checkAssetsForDomains(filename);
-
+      await checkAssetsForDomains(filename);
       await fs.appendFile(filename, content);
     }
 
