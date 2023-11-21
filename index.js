@@ -6,6 +6,7 @@ const content = `
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
 `;
+
 const allowedDomains = [
   "https://tailwind.besoeasy.com/",
   "https://cdn.tailwindcss.com",
@@ -93,30 +94,45 @@ async function buildPages() {
 
 async function buildIndex() {
   try {
-    let mainIndex = "";
     const filenames = await glob.sync("dist/**/*.html");
-    let previousDirectory = null;
+    const indexEntries = {};
 
     for (const filename of filenames) {
-      const newf = filename.replace("dist/", "https://tailwind.besoeasy.com/");
       const newn = filename.replace("dist/", "");
       const parts = newn.split("/");
-
-      if (previousDirectory !== parts[0]) {
-        mainIndex += `<div class="py-20 leading-none text-4xl uppercase">${parts[0]}</div>`;
-      }
-
-      previousDirectory = parts[0];
+      const directoryName = parts[0];
       const nameS = parts[1].split(".html")[0];
 
-      mainIndex += `<div class="m-5 uppercase"><a href="${newf}" class="text-xl">${nameS}</a></div>`;
+      if (!indexEntries[directoryName]) {
+        indexEntries[directoryName] = [];
+      }
+
+      const fileUrl = filename.replace(
+        "dist/",
+        "https://tailwind.besoeasy.com/"
+      );
+      const link = `<a class="m-5 uppercase" href="${fileUrl}" class="text-xl">${nameS}</a>`;
+
+      indexEntries[directoryName].push(link);
     }
 
-    const template = `
-    <!-- Your HTML template -->
+    let mainIndex = "";
+
+    for (const directory in indexEntries) {
+      mainIndex += `<div class="py-20 leading-none text-3xl uppercase">${directory}</div>`;
+      mainIndex += indexEntries[directory].join("");
+    }
+
+    const indexHTML = `
+      <html>
+        <body class="m-auto container">
+          ${mainIndex}
+        </body>
+      </html>
     `;
 
-    await fs.writeFile("./dist/index.html", template);
+    await fs.writeFile("./dist/index.html", indexHTML);
+    console.log("Index built successfully.");
   } catch (err) {
     console.error("Error building index:", err);
   }
