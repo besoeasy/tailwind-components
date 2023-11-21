@@ -111,7 +111,7 @@ async function buildIndex() {
         "dist/",
         "https://tailwind.besoeasy.com/"
       );
-      const link = `<a class="m-5 uppercase" href="${fileUrl}" class="text-xl">${nameS}</a>`;
+      const link = `<a class="m-5 uppercase" href="${fileUrl}">${nameS}</a>`;
 
       indexEntries[directoryName].push(link);
     }
