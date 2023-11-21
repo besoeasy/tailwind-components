@@ -125,7 +125,7 @@ async function buildIndex() {
 
     const indexHTML = `
       <html>
-        <body class="m-auto container">
+        <body class="m-auto container my-20">
           ${mainIndex}
         </body>
         <script defer src="https://cdn.tailwindcss.com"></script>
