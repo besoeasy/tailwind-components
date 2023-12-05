@@ -111,7 +111,7 @@ async function buildIndex() {
         "dist/",
         "https://tailwind.besoeasy.com/"
       );
-      const link = `<a class="m-5 uppercase" href="${fileUrl}">${nameS}</a>`;
+      const link = `<div><a class="m-5 uppercase" href="${fileUrl}">${nameS}</a><div>`;
 
       indexEntries[directoryName].push(link);
     }
@@ -120,7 +120,9 @@ async function buildIndex() {
 
     for (const directory in indexEntries) {
       mainIndex += `<div class="py-20 leading-none text-3xl uppercase">${directory}</div>`;
+      mainIndex += ` <div class="grid grid-cols-8 gap-4">`;
       mainIndex += indexEntries[directory].join("");
+      mainIndex += ` </div>`;
     }
 
     const indexHTML = `
@@ -135,8 +137,8 @@ async function buildIndex() {
   </head>
 
   <body>
-    <section class="relative overflow-hidden py-40">
-      <div class="container mx-auto px-4">
+  <div class="bg-yellow-100">
+       <section class="container mx-auto py-40 m-5">
         <div class="-m-6 flex flex-wrap items-center lg:-m-11">
           <div class="w-full p-6 lg:w-1/2 lg:p-11">
             <div class="lg:max-w-xl">
@@ -219,8 +221,7 @@ async function buildIndex() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </section></div>
     <section class="m-auto container py-20 m-5">
     ${mainIndex}
   </section>
