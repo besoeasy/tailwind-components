@@ -1,23 +1,28 @@
-<section class="py-20">
-    <div class="container mx-auto px-4">
-      <div class="mx-auto max-w-md rounded-lg bg-gray-50 px-8 py-12 text-center">
-        <span class="text-sm font-semibold uppercase text-gray-500">Sign In</span>
-        <h3 class="font-heading mb-8 text-3xl font-bold">Join our community</h3>
-        <form action="#">
-          <input class="mb-4 w-full rounded-lg bg-white py-3 pl-3" type="email" placeholder="E-mail address" />
-          <input class="mb-4 w-full rounded-lg bg-white py-3 pl-3" type="password" placeholder="Password" />
-          <button class="mb-4 block w-full rounded border border-indigo-500 bg-indigo-500 px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:border-indigo-600 hover:bg-indigo-600">Get Started</button>
-          <a class="text-sm text-gray-500 hover:underline" href="#">Forgot password?</a>
-          <a class="mb-4 mt-4 block flex w-full items-center justify-center rounded border border-white bg-white px-5 py-3 text-sm font-semibold transition duration-200 hover:border-indigo-50 hover:bg-indigo-50" href="#">
-            <img class="mr-2 h-5 w-5" src="https://shuffle.dev/plain-assets/socials/facebook.svg" alt="" />
-            <span class="text-sm font-semibold">Sign in with Facebook</span>
-          </a>
-          <a class="flex items-center justify-center rounded border border-white bg-white px-5 py-3 text-sm font-semibold transition duration-200 hover:border-indigo-50 hover:bg-indigo-50" href="#">
-            <img class="mr-2 h-5 w-5" src="https://shuffle.dev/plain-assets/socials/twitter.svg" alt="" />
-            <span class="text-sm font-semibold">Sign in with Twitter</span>
-          </a>
-        </form>
+<section class="relative py-20">
+  <div class="container px-4 mx-auto">
+    <div class="w-full lg:w-1/2 mb-12">
+      <div class="lg:max-w-md">
+        <div class="max-w-md mx-auto text-center py-10">
+          <span class="text-sm text-gray-500 font-semibold uppercase">Sign Up</span>
+          <h3 class="mb-8 text-2xl font-bold font-heading">Create new account</h3>
+          <div class="flex">
+            <input class="w-1/2 mr-2 py-3 pl-3 mb-4 bg-white border rounded" type="text" placeholder="First Name">
+            <input class="w-1/2 py-3 pl-3 mb-4 bg-white border rounded" type="text" placeholder="Last Name">
+          </div>
+          <input class="w-full py-3 pl-3 mb-4 bg-white border rounded" type="email" placeholder="E-mail address">
+          <input class="w-full py-3 pl-3 mb-4 bg-white border rounded" type="password" placeholder="Password">
+          <label class="inline-block mb-4">
+            <input class="mr-1" type="checkbox" name="terms" value="1">
+            <span class="text-sm text-gray-500">By signing up, you agree to our <a class="font-bold hover:underline" href="#">Terms, Data Policy</a> and <a class="font-bold hover:underline" href="#">Cookies Policy</a>.</span>
+          </label>
+          <button class="block w-full mb-4 px-5 py-3 text-sm bg-indigo-500 hover:bg-indigo-600 text-white font-semibold border border-indigo-500 hover:border-indigo-600 rounded transition duration-200">Sign Up</button>
+          <p class="text-sm text-gray-500">
+            <span>Already have an account?</span>
+            <a class="font-bold hover:underline" href="#">Sign In</a>
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+  <div class="h-96 lg:h-auto lg:absolute top-0 right-0 bottom-0 lg:w-1/2 bg-no-repeat bg-cover" style="background-image: url('plain-assets/images/indigo-600-square.png');"></div>
+</section>
