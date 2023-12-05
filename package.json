@@ -1,27 +1,27 @@
 {
-	"name": "tailwind-components",
-	"version": "1.0.0",
-	"description": "tailwind-components",
-	"main": "index.js",
-	"scripts": {
-		"build": "node index.js && npx prettier --print-width 200 --write dist",
-		"dev": "npm run build && npx serve dist"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/besoeasy/tailwind-components.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/besoeasy/tailwind-components/issues"
-	},
-	"homepage": "https://github.com/besoeasy/tailwind-components#readme",
-	"dependencies": {
-		"axios": "^1.6.2",
-		"cheerio": "^1.0.0-rc.12",
-		"glob": "^7.1.7",
-		"uuid": "^9.0.1"
-	}
+  "name": "tailwind-components",
+  "version": "1.0.0",
+  "description": "tailwind-components",
+  "main": "index.js",
+  "scripts": {
+    "copy": "rm -rf dist && mkdir -p dist && cp -r components/* dist",
+    "build": "npm run copy && node build.js  && npx prettier --print-width 200 --write dist "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besoeasy/tailwind-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/besoeasy/tailwind-components/issues"
+  },
+  "homepage": "https://github.com/besoeasy/tailwind-components#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "glob": "^7.1.7",
+    "uuid": "^9.0.1"
+  }
 }
