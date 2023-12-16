@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exec } = require('child_process');
 
-const extraname = "coleos-"
+const extraname = "coleos-banner-"
 
 function generateRandomFileName() {
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
