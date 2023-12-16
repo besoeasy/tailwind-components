@@ -4,6 +4,7 @@
   "description": "tailwind-components",
   "main": "index.js",
   "scripts": {
+    "make": "node make.js",
     "copy": "rm -rf dist && mkdir -p dist && cp -r components/* dist",
     "build": "npm run copy && node build.js && npx prettier --print-width 200 --write dist "
   },
