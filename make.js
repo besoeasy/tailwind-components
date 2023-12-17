@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exec } = require('child_process');
 
-const extraname = "bendis-all-"
+const extraname = "suncealand-all-"
 
 function generateRandomFileName() {
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
