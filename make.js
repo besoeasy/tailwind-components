@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exec } = require('child_process');
 
-const extraname = "boldui-all-"
+const extraname = "bendis-all-"
 
 function generateRandomFileName() {
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
