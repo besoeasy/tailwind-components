@@ -1,127 +1,299 @@
-<div> <section class="bg-blueGray-100 pb-20 md:pb-0 overflow-hidden">
-    <div class="text-gray-50 font-heading font-medium relative bg-blueGray-100">
-      <nav class="flex justify-between px-6 lg:px-12 py-8">
-        <div class="flex w-full items-center justify-between">
-          <a href="#">
-            <img class="h-12" src="uinel-assets/logos/uinel-white-black.svg" alt="">
-          </a>
-          <button class="navbar-burger mx-auto px-4 hidden xl:block hover:text-blueGray-800 focus:outline-none">
-            <svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="2" fill="currentColor"></rect><rect y="14" width="25" height="2" fill="currentColor"></rect></svg>
-          </button>
-          <div class="relative hidden xl:block">
-            <img class="absolute top-1/2 transform -translate-y-2/4 pl-6 mt-px" src="uinel-assets/elements/navigations/search-gray-icon.svg" alt="">
-            <input class="rounded-full py-3 pl-12 pr-5 text-gray-300 font-heading font-medium text-base focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 outline-none" style="width: 145px;">
-          </div>
-        </div>
-        <button class="navbar-burger self-center xl:hidden text-gray-400 hover:text-gray-500 focus:outline-none">
-          <svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="2" fill="currentColor"></rect><rect y="14" width="25" height="2" fill="currentColor"></rect></svg>
-        </button>
-      </nav>
-      <div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-        <nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
-          <div class="flex items-center pl-16 mb-8">
-            <a class="text-2xl text-gray-800 font-bold" href="#">
-              <img class="h-12" src="uinel-assets/logos/uinel-gray-black.svg" alt="">
-            </a>
-          </div>
-          <div class="flex items-center mb-10 px-10">
-            <a class="flex items-center ml-1" href="#">
-              <img class="ml-6" src="uinel-assets/elements/navigations/avatar-online.png" alt="">
-              <img class="ml-6" src="uinel-assets/elements/navigations/arrow-down-gray.svg" alt="">
-            </a>
-            <a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
-              <svg width="20" height="23" viewbox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M1 18.0121H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M8.87891 22H10.8789" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </a>
-          </div>
-          <div>
-            <ul>
-              <li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">New tools</a></li>
-              <li class="mb-1 px-10">
-                <a class="flex items-center pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">
-                  <span>Products</span>
-                  <svg class="ml-4" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
-                  </svg>
-                </a>
-              </li>
-              <li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="mt-auto px-10">
-            <button class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
-              <span class="block mt-px">New project</span>
-            </button>
-            <p class="mt-6 mb-4 text-center">
-              <span class="text-sm text-darkBlueGray-400">2021 © Uinel. All rights reserved.</span>
-            </p>
-          </div>
-        </nav>
-        <button class="navbar-close absolute top-5 p-6 right-5">
-          <div class="absolute top-3">
-            <span class="absolute w-px h-6 bg-black transform -rotate-45"></span>
-            <span class="absolute w-px h-6 bg-black transform rotate-45"></span>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div class="relative">
-      <img class="hidden xl:block absolute bottom-0 left-0" style="height: 700px;" src="uinel-assets/images/heroes/left-bar.png" alt="">
-      <img class="hidden md:block xl:hidden absolute bottom-0 left-0" style="height: 412px;" src="uinel-assets/images/heroes/left-bar.png" alt="">
-      <div class="px-4 mx-auto">
-        <div class="md:grid md:grid-cols-2 md:pt-16">
-          <div class="relative flex items-end mb-20 md:mb-0">
-            <div>
-              <img class="relative z-10" src="uinel-assets/images/heroes/hero5-man.jpeg" alt="">
-            </div>
-          </div>
-          <div class="container relative px-4 mx-auto">
-            <div class="relative 2xl:mt-36 mx-auto md:text-center">
-              <span class="block mb-9 font-medium uppercase tracking-widest text-xs text-gray-300">Better communication and work</span>
-              <h1 class="xl:max-w-xl mb-9 xl:mx-auto font-heading font-medium text-9xl md:text-10xl xl:text-13xl leading-none">Manage your work</h1>
-              <p class="xl:max-w-sm mb-16 xl:mx-auto font-normal text-xl leading-8 text-darkBlueGray-400">Fusce sem lectus, pretium at pellentesque a sagittis non.</p>
-              <a class="inline-block py-4 px-10 mb-12 md:mb-32 font-heading font-medium tracking-tighter text-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl" href="#" type="button">Discover now</a>
-              <button class="hidden lg:block relative bottom-0 max-w-max ml-auto">
-                <img class="h-24 xl:h-auto" src="uinel-assets/elements/heroes/scroll-down.svg" alt="">
-              </button>
-              <div class="hidden md:block absolute md:-bottom-12 lg:bottom-0 -left-1/2 z-10 -ml-8 lg:-ml-28">
-                <img class="hidden md:block absolute top-0 lg:top-12 right-0 transform translate-x-1/2 z-10 xl:-mr-16" src="uinel-assets/elements/heroes/arrow-up.svg" alt="">
-                <div class="relative flex items-center bg-white z-10 rounded-tl-20 rounded-bl-20">
-                  <div class="px-8 lg:px-20">
-                    <h3 class="mb-3 font-heading text-xl lg:text-7xl leading-tighter">More inspiration</h3>
-                    <div class="flex items-center gap-3">
-                      <a class="inline-block font-heading text-sm lg:text-xl text-purple-500 hover:text-purple-600 leading-tighter" href="#">Discover</a>
-                      <div class="w-px h-5 bg-gray-100"></div>
-                      <div class="font-medium uppercase tracking-widest text-xs text-gray-300">2 June</div>
-                    </div>
-                  </div>
-                  <img class="h-32 lg:h-40 xl:h-auto" src="uinel-assets/images/heroes/hero5-teacher.jpg" alt="">
-                </div>
-                <div class="relative -top-12 lg:-top-7 px-5">
-                  <div class="py-6 bg-white bg-opacity-70 rounded-lg"></div>
-                </div>
-              </div>
-              <div class="md:hidden relative">
-                <img class="absolute top-0 lg:top-12 left-0 ml-24" src="uinel-assets/elements/heroes/arrow-up.svg" alt="">
-                <div class="relative inline-flex items-center bg-white z-10 rounded-tl-20 rounded-bl-20">
-                  <div class="px-8 lg:px-20">
-                    <h3 class="mb-3 font-heading text-xl lg:text-7xl leading-tighter">More inspiration</h3>
-                    <div class="flex items-center gap-3">
-                      <a class="inline-block font-heading text-sm lg:text-xl text-purple-500 hover:text-purple-600 leading-tighter" href="#">Discover</a>
-                      <div class="w-px h-5 bg-gray-100"></div>
-                      <div class="hidden md:block font-medium uppercase tracking-widest text-xs text-gray-300">2 June</div>
-                    </div>
-                  </div>
-                  <img class="h-32 lg:h-40 xl:h-auto" src="uinel-assets/images/heroes/hero5-teacher.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section></div>
+<div>
+	<section class="bg-blueGray-100 pb-20 md:pb-0 overflow-hidden">
+		<div class="text-gray-50 font-heading font-medium relative bg-blueGray-100">
+			<nav class="flex justify-between px-6 lg:px-12 py-8">
+				<div class="flex w-full items-center justify-between">
+					<a href="#">
+						<img
+							class="h-12"
+							src="https://shuffle.dev/uinel-assets/logos/uinel-white-black.svg"
+							alt=""
+						/>
+					</a>
+					<button
+						class="navbar-burger mx-auto px-4 hidden xl:block hover:text-blueGray-800 focus:outline-none"
+					>
+						<svg
+							width="25"
+							height="16"
+							viewbox="0 0 25 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect width="25" height="2" fill="currentColor"></rect>
+							<rect y="14" width="25" height="2" fill="currentColor"></rect>
+						</svg>
+					</button>
+					<div class="relative hidden xl:block">
+						<img
+							class="absolute top-1/2 transform -translate-y-2/4 pl-6 mt-px"
+							src="https://shuffle.dev/uinel-assets/elements/navigations/search-gray-icon.svg"
+							alt=""
+						/>
+						<input
+							class="rounded-full py-3 pl-12 pr-5 text-gray-300 font-heading font-medium text-base focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 outline-none"
+							style="width: 145px;"
+						/>
+					</div>
+				</div>
+				<button class="navbar-burger self-center xl:hidden text-gray-400 hover:text-gray-500 focus:outline-none">
+					<svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="25" height="2" fill="currentColor"></rect>
+						<rect y="14" width="25" height="2" fill="currentColor"></rect>
+					</svg>
+				</button>
+			</nav>
+			<div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+				<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+				<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
+					<div class="flex items-center pl-16 mb-8">
+						<a class="text-2xl text-gray-800 font-bold" href="#">
+							<img
+								class="h-12"
+								src="https://shuffle.dev/uinel-assets/logos/uinel-gray-black.svg"
+								alt=""
+							/>
+						</a>
+					</div>
+					<div class="flex items-center mb-10 px-10">
+						<a class="flex items-center ml-1" href="#">
+							<img
+								class="ml-6"
+								src="https://shuffle.dev/uinel-assets/elements/navigations/avatar-online.png"
+								alt=""
+							/>
+							<img
+								class="ml-6"
+								src="https://shuffle.dev/uinel-assets/elements/navigations/arrow-down-gray.svg"
+								alt=""
+							/>
+						</a>
+						<a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
+							<svg
+								width="20"
+								height="23"
+								viewbox="0 0 20 23"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+								<path
+									d="M1 18.0121H19"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+								<path
+									d="M8.87891 22H10.8789"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</a>
+					</div>
+					<div>
+						<ul>
+							<li class="mb-1 px-10">
+								<a
+									class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+									>New tools</a
+								>
+							</li>
+							<li class="mb-1 px-10">
+								<a
+									class="flex items-center pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+								>
+									<span>Products</span>
+									<svg
+										class="ml-4"
+										width="8"
+										height="5"
+										viewbox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</li>
+							<li class="mb-1 px-10">
+								<a
+									class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+									>Pricing</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="mt-auto px-10">
+						<button
+							class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full"
+						>
+							<span class="block mt-px">New project</span>
+						</button>
+						<p class="mt-6 mb-4 text-center">
+							<span class="text-sm text-darkBlueGray-400"
+								>2021 © Uinel. All rights reserved.</span
+							>
+						</p>
+					</div>
+				</nav>
+				<button class="navbar-close absolute top-5 p-6 right-5">
+					<div class="absolute top-3">
+						<span class="absolute w-px h-6 bg-black transform -rotate-45"></span>
+						<span class="absolute w-px h-6 bg-black transform rotate-45"></span>
+					</div>
+				</button>
+			</div>
+		</div>
+		<div class="relative">
+			<img
+				class="hidden xl:block absolute bottom-0 left-0"
+				style="height: 700px;"
+				src="https://shuffle.dev/uinel-assets/images/heroes/left-bar.png"
+				alt=""
+			/>
+			<img
+				class="hidden md:block xl:hidden absolute bottom-0 left-0"
+				style="height: 412px;"
+				src="https://shuffle.dev/uinel-assets/images/heroes/left-bar.png"
+				alt=""
+			/>
+			<div class="px-4 mx-auto">
+				<div class="md:grid md:grid-cols-2 md:pt-16">
+					<div class="relative flex items-end mb-20 md:mb-0">
+						<div>
+							<img
+								class="relative z-10"
+								src="https://shuffle.dev/uinel-assets/images/heroes/hero5-man.jpeg"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="container relative px-4 mx-auto">
+						<div class="relative 2xl:mt-36 mx-auto md:text-center">
+							<span
+								class="block mb-9 font-medium uppercase tracking-widest text-xs text-gray-300"
+								>Better communication and work</span
+							>
+							<h1
+								class="xl:max-w-xl mb-9 xl:mx-auto font-heading font-medium text-9xl md:text-10xl xl:text-13xl leading-none"
+							>
+								Manage your work
+							</h1>
+							<p
+								class="xl:max-w-sm mb-16 xl:mx-auto font-normal text-xl leading-8 text-darkBlueGray-400"
+							>
+								Fusce sem lectus, pretium at pellentesque a sagittis non.
+							</p>
+							<a
+								class="inline-block py-4 px-10 mb-12 md:mb-32 font-heading font-medium tracking-tighter text-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+								href="#"
+								type="button"
+								>Discover now</a
+							>
+							<button class="hidden lg:block relative bottom-0 max-w-max ml-auto">
+								<img
+									class="h-24 xl:h-auto"
+									src="https://shuffle.dev/uinel-assets/elements/heroes/scroll-down.svg"
+									alt=""
+								/>
+							</button>
+							<div
+								class="hidden md:block absolute md:-bottom-12 lg:bottom-0 -left-1/2 z-10 -ml-8 lg:-ml-28"
+							>
+								<img
+									class="hidden md:block absolute top-0 lg:top-12 right-0 transform translate-x-1/2 z-10 xl:-mr-16"
+									src="https://shuffle.dev/uinel-assets/elements/heroes/arrow-up.svg"
+									alt=""
+								/>
+								<div
+									class="relative flex items-center bg-white z-10 rounded-tl-20 rounded-bl-20"
+								>
+									<div class="px-8 lg:px-20">
+										<h3
+											class="mb-3 font-heading text-xl lg:text-7xl leading-tighter"
+										>
+											More inspiration
+										</h3>
+										<div class="flex items-center gap-3">
+											<a
+												class="inline-block font-heading text-sm lg:text-xl text-purple-500 hover:text-purple-600 leading-tighter"
+												href="#"
+												>Discover</a
+											>
+											<div class="w-px h-5 bg-gray-100"></div>
+											<div
+												class="font-medium uppercase tracking-widest text-xs text-gray-300"
+											>
+												2 June
+											</div>
+										</div>
+									</div>
+									<img
+										class="h-32 lg:h-40 xl:h-auto"
+										src="https://shuffle.dev/uinel-assets/images/heroes/hero5-teacher.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="relative -top-12 lg:-top-7 px-5">
+									<div class="py-6 bg-white bg-opacity-70 rounded-lg"></div>
+								</div>
+							</div>
+							<div class="md:hidden relative">
+								<img
+									class="absolute top-0 lg:top-12 left-0 ml-24"
+									src="https://shuffle.dev/uinel-assets/elements/heroes/arrow-up.svg"
+									alt=""
+								/>
+								<div
+									class="relative inline-flex items-center bg-white z-10 rounded-tl-20 rounded-bl-20"
+								>
+									<div class="px-8 lg:px-20">
+										<h3
+											class="mb-3 font-heading text-xl lg:text-7xl leading-tighter"
+										>
+											More inspiration
+										</h3>
+										<div class="flex items-center gap-3">
+											<a
+												class="inline-block font-heading text-sm lg:text-xl text-purple-500 hover:text-purple-600 leading-tighter"
+												href="#"
+												>Discover</a
+											>
+											<div class="w-px h-5 bg-gray-100"></div>
+											<div
+												class="hidden md:block font-medium uppercase tracking-widest text-xs text-gray-300"
+											>
+												2 June
+											</div>
+										</div>
+									</div>
+									<img
+										class="h-32 lg:h-40 xl:h-auto"
+										src="https://shuffle.dev/uinel-assets/images/heroes/hero5-teacher.jpg"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

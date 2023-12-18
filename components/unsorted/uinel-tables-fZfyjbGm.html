@@ -1,231 +1,512 @@
-<div> <section class="py-8 bg-blueGray-50">
-    <div class="container px-4 mx-auto">
-      <div class="p-7 pb-16 pt-12 bg-white rounded-5xl">
-        <div class="flex flex-wrap px-9 mb-8 md:mb-0">
-          <div class="w-full md:w-1/2">
-            <h2 class="mb-9 text-3xl font-heading font-medium">Recent Transactions</h2>
-          </div>
-          <div class="w-full md:w-1/2 max-w-max md:ml-auto"><a class="block py-4 px-7 w-full leading-3 text-white font-semibold tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl" href="#">Export file</a></div>
-        </div>
-        <div class="px-9 mb-4">
-          <div class="border-t border-gray-100"><a class="inline-block py-4 pr-20 mr-12 text-blue-500 hover:text-blue-600 font-heading font-medium border-t-2 border-blue-500" href="#">Generals</a><a class="inline-block py-4 text-gray-300 hover:text-gray-400 font-heading font-medium" href="#">Others</a></div>
-        </div>
-        <div class="overflow-x-auto">
-          <div class="inline-block min-w-full overflow-hidden">
-            <table class="table-auto w-full">
-              <thead>
-                <tr>
-                  <th class="flex items-center pl-9 h-20 bg-white text-left">
-                    <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                    <a class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max" href="#">Invoice id</a>
-                    <div>
-                      <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z" fill="#9E9FA0"></path>
-                      </svg>
-                      <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z" fill="#9E9FA0"></path>
-                      </svg>
-                    </div>
-                  </th>
-                  <th class="p-5 h-20 bg-white">
-                    <div class="flex items-center justify-center">
-                      <a class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max" href="#">Date</a>
-                      <div>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z" fill="#9E9FA0"></path>
-                        </svg>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z" fill="#9E9FA0"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </th>
-                  <th class="p-5 h-20 bg-white">
-                    <div class="flex items-center justify-center">
-                      <a class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max" href="#">E-mail</a>
-                      <div>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z" fill="#9E9FA0"></path>
-                        </svg>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z" fill="#9E9FA0"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </th>
-                  <th class="p-5 h-20 bg-white">
-                    <div class="flex items-center justify-center">
-                      <a class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max" href="#">Status</a>
-                      <div>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z" fill="#9E9FA0"></path>
-                        </svg>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z" fill="#9E9FA0"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </th>
-                  <th class="p-5 h-20 bg-white">
-                    <div class="flex items-center justify-center">
-                      <a class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max" href="#">Subscription</a>
-                      <div>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z" fill="#9E9FA0"></path>
-                        </svg>
-                        <svg class="my-1" width="7" height="4" viewbox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z" fill="#9E9FA0"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="p-0">
-                    <div class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl">
-                      <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                      <span class="text-lg font-heading font-medium">WX90013</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">08.04.2021</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">user@shuffle.dev</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full">Completed</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">Monthly</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-0">
-                    <div class="flex items-center pl-9 h-20 bg-white rounded-tl-5xl rounded-bl-5xl">
-                      <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                      <span class="text-lg font-heading font-medium">WX90014</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">08.04.2021</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">matthew@shuffle.dev</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full">Completed</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">Lifetime</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-0">
-                    <div class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl">
-                      <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                      <span class="text-lg font-heading font-medium">WX90015</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">08.04.2021</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">pat@shuffle.dev</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="py-1 px-3 text-sm text-orange-700 font-heading font-medium bg-orange-200 rounded-full">Canceled</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">Monthly</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-0">
-                    <div class="flex items-center pl-9 h-20 bg-white rounded-tl-5xl rounded-bl-5xl">
-                      <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                      <span class="text-lg font-heading font-medium">WX90016</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">08.04.2021</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">dawid@shuffle.dev</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <span class="py-1 px-3 text-sm text-orange-700 font-heading font-medium bg-orange-200 rounded-full">Pending</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                      <img src="uinel-assets/elements/dashboard-tables/checkmark.svg" alt="">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-0">
-                    <div class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl">
-                      <input class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md" type="checkbox">
-                      <span class="text-lg font-heading font-medium">WX90017</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">08.04.2021</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="text-lg text-darkBlueGray-400 font-heading">ya@shuffle.dev</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100">
-                      <span class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full">Completed</span>
-                    </div>
-                  </td>
-                  <td class="p-0">
-                    <div class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl">
-                      <img src="uinel-assets/elements/dashboard-tables/checkmark.svg" alt="">
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section></div>
+<div>
+	<section class="py-8 bg-blueGray-50">
+		<div class="container px-4 mx-auto">
+			<div class="p-7 pb-16 pt-12 bg-white rounded-5xl">
+				<div class="flex flex-wrap px-9 mb-8 md:mb-0">
+					<div class="w-full md:w-1/2">
+						<h2 class="mb-9 text-3xl font-heading font-medium">Recent Transactions</h2>
+					</div>
+					<div class="w-full md:w-1/2 max-w-max md:ml-auto">
+						<a
+							class="block py-4 px-7 w-full leading-3 text-white font-semibold tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+							href="#"
+							>Export file</a
+						>
+					</div>
+				</div>
+				<div class="px-9 mb-4">
+					<div class="border-t border-gray-100">
+						<a
+							class="inline-block py-4 pr-20 mr-12 text-blue-500 hover:text-blue-600 font-heading font-medium border-t-2 border-blue-500"
+							href="#"
+							>Generals</a
+						><a
+							class="inline-block py-4 text-gray-300 hover:text-gray-400 font-heading font-medium"
+							href="#"
+							>Others</a
+						>
+					</div>
+				</div>
+				<div class="overflow-x-auto">
+					<div class="inline-block min-w-full overflow-hidden">
+						<table class="table-auto w-full">
+							<thead>
+								<tr>
+									<th class="flex items-center pl-9 h-20 bg-white text-left">
+										<input
+											class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+											type="checkbox"
+										/>
+										<a
+											class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max"
+											href="#"
+											>Invoice id</a
+										>
+										<div>
+											<svg
+												class="my-1"
+												width="7"
+												height="4"
+												viewbox="0 0 7 4"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z"
+													fill="#9E9FA0"
+												></path>
+											</svg>
+											<svg
+												class="my-1"
+												width="7"
+												height="4"
+												viewbox="0 0 7 4"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z"
+													fill="#9E9FA0"
+												></path>
+											</svg>
+										</div>
+									</th>
+									<th class="p-5 h-20 bg-white">
+										<div class="flex items-center justify-center">
+											<a
+												class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max"
+												href="#"
+												>Date</a
+											>
+											<div>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+											</div>
+										</div>
+									</th>
+									<th class="p-5 h-20 bg-white">
+										<div class="flex items-center justify-center">
+											<a
+												class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max"
+												href="#"
+												>E-mail</a
+											>
+											<div>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+											</div>
+										</div>
+									</th>
+									<th class="p-5 h-20 bg-white">
+										<div class="flex items-center justify-center">
+											<a
+												class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max"
+												href="#"
+												>Status</a
+											>
+											<div>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+											</div>
+										</div>
+									</th>
+									<th class="p-5 h-20 bg-white">
+										<div class="flex items-center justify-center">
+											<a
+												class="inline-block mr-4 text-sm text-body text-opacity-40 font-heading font-semibold uppercase min-w-max"
+												href="#"
+												>Subscription</a
+											>
+											<div>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M0.898704 3.84541C0.692525 4.05153 0.359292 4.05153 0.154634 3.84541C-0.0507836 3.6393 -0.0523052 3.30629 0.154635 3.10017L3.12787 0.154586C3.33329 -0.0515278 3.66576 -0.0515278 3.8727 0.154586L6.84594 3.10017C7.05135 3.30552 7.05135 3.6393 6.84594 3.84541C6.63976 4.05153 6.30652 4.05153 6.10187 3.84541L3.49915 1.42973L0.898704 3.84541Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+												<svg
+													class="my-1"
+													width="7"
+													height="4"
+													viewbox="0 0 7 4"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.10129 0.154586C6.30747 -0.0515286 6.64071 -0.0515286 6.84537 0.154586C7.05078 0.3607 7.0523 0.693713 6.84537 0.899827L3.87213 3.84541C3.66671 4.05153 3.33424 4.05153 3.1273 3.84541L0.154064 0.899827C-0.0513545 0.694482 -0.0513545 0.3607 0.154064 0.154586C0.360242 -0.0515286 0.693476 -0.0515286 0.898133 0.154586L3.50085 2.57027L6.10129 0.154586Z"
+														fill="#9E9FA0"
+													></path>
+												</svg>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="p-0">
+										<div
+											class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl"
+										>
+											<input
+												class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+												type="checkbox"
+											/>
+											<span
+												class="text-lg font-heading font-medium"
+												>WX90013</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>08.04.2021</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>user@shuffle.dev</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full"
+												>Completed</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>Monthly</span
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="p-0">
+										<div
+											class="flex items-center pl-9 h-20 bg-white rounded-tl-5xl rounded-bl-5xl"
+										>
+											<input
+												class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+												type="checkbox"
+											/>
+											<span
+												class="text-lg font-heading font-medium"
+												>WX90014</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>08.04.2021</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>matthew@shuffle.dev</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full"
+												>Completed</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>Lifetime</span
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="p-0">
+										<div
+											class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl"
+										>
+											<input
+												class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+												type="checkbox"
+											/>
+											<span
+												class="text-lg font-heading font-medium"
+												>WX90015</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>08.04.2021</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>pat@shuffle.dev</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="py-1 px-3 text-sm text-orange-700 font-heading font-medium bg-orange-200 rounded-full"
+												>Canceled</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>Monthly</span
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="p-0">
+										<div
+											class="flex items-center pl-9 h-20 bg-white rounded-tl-5xl rounded-bl-5xl"
+										>
+											<input
+												class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+												type="checkbox"
+											/>
+											<span
+												class="text-lg font-heading font-medium"
+												>WX90016</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>08.04.2021</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>dawid@shuffle.dev</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<span
+												class="py-1 px-3 text-sm text-orange-700 font-heading font-medium bg-orange-200 rounded-full"
+												>Pending</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"
+										>
+											<img
+												src="https://shuffle.dev/uinel-assets/elements/dashboard-tables/checkmark.svg"
+												alt=""
+											/>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="p-0">
+										<div
+											class="flex items-center pl-9 h-20 bg-blueGray-50 border-l border-t border-b border-gray-100 rounded-tl-5xl rounded-bl-5xl"
+										>
+											<input
+												class="appearance-none w-6 h-6 mr-9 bg-white border-2 border-darkbluegray-50 rounded-md"
+												type="checkbox"
+											/>
+											<span
+												class="text-lg font-heading font-medium"
+												>WX90017</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>08.04.2021</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="text-lg text-darkBlueGray-400 font-heading"
+												>ya@shuffle.dev</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"
+										>
+											<span
+												class="py-1 px-3 text-sm text-green-700 font-heading font-medium bg-green-200 rounded-full"
+												>Completed</span
+											>
+										</div>
+									</td>
+									<td class="p-0">
+										<div
+											class="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl"
+										>
+											<img
+												src="https://shuffle.dev/uinel-assets/elements/dashboard-tables/checkmark.svg"
+												alt=""
+											/>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

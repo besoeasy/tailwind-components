@@ -1,181 +1,429 @@
-<div> <section class="relative bg-white overflow-hidden">
-    <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap -mx-4 min-h-screen">
-        <div class="lg:border-r lg:border-coolGray-200 w-full lg:w-7/12 px-4 lg:pt-20 lg:pb-20 xl:pb-32 pt-12">
-          <div class="max-w-lg xl:max-w-xl mx-auto lg:mx-0">
-            <h2 class="text-rhino-700 text-3xl font-semibold mb-8 font-heading">Billing address</h2>
-            <div class="pb-10 flex flex-col gap-8">
-              <div class="sm:flex flex-wrap gap-8">
-                <div class="flex-1 mb-8 sm:mb-0">
-                  <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput1">First Name</label>
-                  <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput1" type="text" placeholder="Enter">
-                </div>
-                <div class="flex-1">
-                  <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput2">Last Name</label>
-                  <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput2" type="text" placeholder="Enter">
-                </div>
-              </div>
-              <div>
-                <label class="block text-coolGray-700 text-sm font-medium mb-2" for="">Username</label>
-                <div class="rounded-sm py-3 px-2 border border-coolGray-200 flex">
-                  <img class="mr-2" src="coleos-assets/checkout/input-icon.png" alt="">
-                  <input class="flex-1 outline-none" id="textInput3" type="text" placeholder="username">
-                </div>
-              </div>
-              <div>
-                <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput4">Address</label>
-                <input class="rounded-sm py-3 px-2 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput4" type="text" placeholder="Enter">
-              </div>
-              <div>
-                <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput5">Address 2</label>
-                <input class="rounded-sm py-3 px-2 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput5" type="text" placeholder="Enter">
-              </div>
-              <div class="flex flex-wrap -mx-4 gap-8 sm:gap-0">
-                <div class="w-full sm:w-1/3 px-4">
-                  <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput6">Country</label>
-                  <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput6" type="text" placeholder="Enter">
-                </div>
-                <div class="w-full sm:w-1/3 px-4">
-                  <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput7">State</label>
-                  <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput7" type="text" placeholder="Enter">
-                </div>
-                <div class="w-full sm:w-1/3 px-4">
-                  <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput8">Zip Code</label>
-                  <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput8" type="text" placeholder="XX-XXX">
-                </div>
-              </div>
-              <div class="py-10 border-b border-coolGray-200 flex flex-col gap-8">
-                <div class="flex flex-col gap-4 mb-10">
-                  <div class="flex items-center gap-3">
-                    <div class="relative">
-                      <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox1" type="checkbox">
-                      <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                        <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <label class="block text-gray-700" for="checkbox1">Shipping address is the same as my billing address</label>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <div class="relative">
-                      <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox2" type="checkbox" checked="">
-                      <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                        <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <label class="block text-gray-700" for="checkbox2">Save this information for next time</label>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-sm text-coolGray-700 font-bold mb-4">Payment</p>
-                  <div class="flex flex-wrap items-center gap-6">
-                    <div class="flex items-center gap-3">
-                      <div class="relative">
-                        <div class="flex flex-wrap items-center">
-                          <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="radioInput1" type="radio">
-                          <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full">
-                            <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <label class="text-coolGray-700 ml-3" for="radioInput1">Credit Card</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <div class="relative">
-                        <div class="flex flex-wrap items-center">
-                          <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="radioInput2" type="radio">
-                          <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full">
-                            <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <label class="text-coolGray-700 ml-3" for="radioInput2">Debit Card</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                      <div class="relative">
-                        <div class="flex flex-wrap items-center">
-                          <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="radioInput3" type="radio">
-                          <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full">
-                            <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                          <label class="text-coolGray-700 ml-3" for="radioInput3">PayPal</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-10">
-                <div class="flex flex-wrap gap-8 sm:gap-0 -mx-4 mb-8">
-                  <div class="w-full sm:w-1/2 px-4">
-                    <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput9">Name on card</label>
-                    <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full mb-3 outline-none focus:ring-1 ring-indigo-400" id="textInput9" type="text" placeholder="Enter">
-                    <p class="text-coolGray-400 text-xs">Full name as displayed on card</p>
-                  </div>
-                  <div class="w-full sm:w-1/2 px-4">
-                    <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput10">Credit card number</label>
-                    <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400" id="textInput10" type="text" placeholder="Enter">
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-8 sm:gap-0 -mx-4">
-                  <div class="w-full sm:w-1/2 px-4">
-                    <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput11">Expiration</label>
-                    <input class="rounded-sm py-3 px-4 border border-coolGray-200 w-full mb-3 outline-none focus:ring-1 ring-indigo-400" id="textInput11" type="text" placeholder="Enter">
-                  </div>
-                  <div class="w-full sm:w-1/2 px-4">
-                    <label class="block text-coolGray-700 text-sm font-medium mb-2" for="textInput12">CVC</label>
-                    <input class="w-full rounded-sm py-3 px-4 border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput12" type="text" placeholder="Enter">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full lg:w-5/12 px-4 py-12 lg:py-20">
-          <div class="max-w-lg lg:max-w-sm mx-auto lg:mr-0">
-            <h2 class="text-rhino-700 text-3xl font-semibold mb-16 font-heading">Order Summary</h2>
-            <div class="p-6 bg-purple-100 rounded-xl mb-6">
-              <p class="text-rhino-800 text-sm mb-8">Shipping and additional costs are calculated based on values you have entered.</p>
-              <div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
-                <p class="uppercase text-xs font-bold text-rhino-300">Order subtotal</p>
-                <p class="text-rhino-800 text-xs font-bold">$390.00</p>
-              </div>
-              <div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
-                <p class="uppercase text-xs font-bold text-rhino-300">Shipping & handling</p>
-                <p class="text-rhino-800 text-xs font-bold">$10.00</p>
-              </div>
-              <div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
-                <p class="uppercase text-xs font-bold text-rhino-300">TAX</p>
-                <p class="text-rhino-800 text-xs font-bold">$0.00</p>
-              </div>
-              <div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-8">
-                <div class="uppercase bg-orange-500 rounded-sm py-1 px-3 text-white text-xs font-bold tracking-widest">Discount</div>
-                <p class="text-orange-500 text-xs font-bold">20%</p>
-              </div>
-              <div class="flex justify-between items-center flex-wrap gap-4">
-                <h2 class="text-coolGray-800 text-lg font-semibold">Total</h2>
-                <p class="text-purple-500 text-lg font-semibold">$320.00</p>
-              </div>
-            </div>
-            <div class="p-6 bg-purple-100 rounded-xl">
-              <label class="text-sm text-coolGray-700 font-medium mb-2 block" for="">Enter promo code</label>
-              <div class="flex flex-wrap gap-4 mb-6">
-                <input class="flex-1 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm outline-none focus:ring-1 ring-indigo-400" type="text" value="EASDDGFHGE5423">
-                <a class="inline-block text-sm text-purple-500 font-medium py-3 px-4 rounded-sm border border-purple-500 hover:bg-purple-500 hover:text-white transition duration-200" href="#">Apply</a>
-              </div>
-              <a class="inline-block w-full px-3 py-4 rounded-sm text-center text-white text-sm font-medium bg-purple-500 hover:bg-purple-600 transition duration-200" href="#">Continue to Checkout</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section></div>
+<div>
+	<section class="relative bg-white overflow-hidden">
+		<div class="container px-4 mx-auto">
+			<div class="flex flex-wrap -mx-4 min-h-screen">
+				<div class="lg:border-r lg:border-coolGray-200 w-full lg:w-7/12 px-4 lg:pt-20 lg:pb-20 xl:pb-32 pt-12">
+					<div class="max-w-lg xl:max-w-xl mx-auto lg:mx-0">
+						<h2 class="text-rhino-700 text-3xl font-semibold mb-8 font-heading">Billing address</h2>
+						<div class="pb-10 flex flex-col gap-8">
+							<div class="sm:flex flex-wrap gap-8">
+								<div class="flex-1 mb-8 sm:mb-0">
+									<label
+										class="block text-coolGray-700 text-sm font-medium mb-2"
+										for="textInput1"
+										>First Name</label
+									>
+									<input
+										class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+										id="textInput1"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="flex-1">
+									<label
+										class="block text-coolGray-700 text-sm font-medium mb-2"
+										for="textInput2"
+										>Last Name</label
+									>
+									<input
+										class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+										id="textInput2"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+							</div>
+							<div>
+								<label class="block text-coolGray-700 text-sm font-medium mb-2" for=""
+									>Username</label
+								>
+								<div class="rounded-sm py-3 px-2 border border-coolGray-200 flex">
+									<img
+										class="mr-2"
+										src="https://shuffle.dev/coleos-assets/checkout/input-icon.png"
+										alt=""
+									/>
+									<input
+										class="flex-1 outline-none"
+										id="textInput3"
+										type="text"
+										placeholder="username"
+									/>
+								</div>
+							</div>
+							<div>
+								<label
+									class="block text-coolGray-700 text-sm font-medium mb-2"
+									for="textInput4"
+									>Address</label
+								>
+								<input
+									class="rounded-sm py-3 px-2 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+									id="textInput4"
+									type="text"
+									placeholder="Enter"
+								/>
+							</div>
+							<div>
+								<label
+									class="block text-coolGray-700 text-sm font-medium mb-2"
+									for="textInput5"
+									>Address 2</label
+								>
+								<input
+									class="rounded-sm py-3 px-2 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+									id="textInput5"
+									type="text"
+									placeholder="Enter"
+								/>
+							</div>
+							<div class="flex flex-wrap -mx-4 gap-8 sm:gap-0">
+								<div class="w-full sm:w-1/3 px-4">
+									<label
+										class="block text-coolGray-700 text-sm font-medium mb-2"
+										for="textInput6"
+										>Country</label
+									>
+									<input
+										class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+										id="textInput6"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="w-full sm:w-1/3 px-4">
+									<label
+										class="block text-coolGray-700 text-sm font-medium mb-2"
+										for="textInput7"
+										>State</label
+									>
+									<input
+										class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+										id="textInput7"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="w-full sm:w-1/3 px-4">
+									<label
+										class="block text-coolGray-700 text-sm font-medium mb-2"
+										for="textInput8"
+										>Zip Code</label
+									>
+									<input
+										class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+										id="textInput8"
+										type="text"
+										placeholder="XX-XXX"
+									/>
+								</div>
+							</div>
+							<div class="py-10 border-b border-coolGray-200 flex flex-col gap-8">
+								<div class="flex flex-col gap-4 mb-10">
+									<div class="flex items-center gap-3">
+										<div class="relative">
+											<input
+												class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+												id="checkbox1"
+												type="checkbox"
+											/>
+											<div
+												class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+											>
+												<svg
+													class="hidden"
+													width="10"
+													height="7"
+													viewbox="0 0 10 7"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<label class="block text-gray-700" for="checkbox1"
+											>Shipping address is the same as my
+											billing address</label
+										>
+									</div>
+									<div class="flex items-center gap-3">
+										<div class="relative">
+											<input
+												class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+												id="checkbox2"
+												type="checkbox"
+												checked=""
+											/>
+											<div
+												class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+											>
+												<svg
+													class="hidden"
+													width="10"
+													height="7"
+													viewbox="0 0 10 7"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<label class="block text-gray-700" for="checkbox2"
+											>Save this information for next
+											time</label
+										>
+									</div>
+								</div>
+								<div>
+									<p class="text-sm text-coolGray-700 font-bold mb-4">
+										Payment
+									</p>
+									<div class="flex flex-wrap items-center gap-6">
+										<div class="flex items-center gap-3">
+											<div class="relative">
+												<div
+													class="flex flex-wrap items-center"
+												>
+													<input
+														class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+														id="radioInput1"
+														type="radio"
+													/>
+													<div
+														class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full"
+													>
+														<svg
+															class="hidden"
+															width="10"
+															height="7"
+															viewbox="0 0 10 7"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+																fill="currentColor"
+															></path>
+														</svg>
+													</div>
+													<label
+														class="text-coolGray-700 ml-3"
+														for="radioInput1"
+														>Credit
+														Card</label
+													>
+												</div>
+											</div>
+										</div>
+										<div class="flex items-center gap-3">
+											<div class="relative">
+												<div
+													class="flex flex-wrap items-center"
+												>
+													<input
+														class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+														id="radioInput2"
+														type="radio"
+													/>
+													<div
+														class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full"
+													>
+														<svg
+															class="hidden"
+															width="10"
+															height="7"
+															viewbox="0 0 10 7"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+																fill="currentColor"
+															></path>
+														</svg>
+													</div>
+													<label
+														class="text-coolGray-700 ml-3"
+														for="radioInput2"
+														>Debit
+														Card</label
+													>
+												</div>
+											</div>
+										</div>
+										<div class="flex items-center gap-3">
+											<div class="relative">
+												<div
+													class="flex flex-wrap items-center"
+												>
+													<input
+														class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+														id="radioInput3"
+														type="radio"
+													/>
+													<div
+														class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-full"
+													>
+														<svg
+															class="hidden"
+															width="10"
+															height="7"
+															viewbox="0 0 10 7"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+																fill="currentColor"
+															></path>
+														</svg>
+													</div>
+													<label
+														class="text-coolGray-700 ml-3"
+														for="radioInput3"
+														>PayPal</label
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pt-10">
+								<div class="flex flex-wrap gap-8 sm:gap-0 -mx-4 mb-8">
+									<div class="w-full sm:w-1/2 px-4">
+										<label
+											class="block text-coolGray-700 text-sm font-medium mb-2"
+											for="textInput9"
+											>Name on card</label
+										>
+										<input
+											class="rounded-sm py-3 px-4 border border-coolGray-200 w-full mb-3 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput9"
+											type="text"
+											placeholder="Enter"
+										/>
+										<p class="text-coolGray-400 text-xs">
+											Full name as displayed on card
+										</p>
+									</div>
+									<div class="w-full sm:w-1/2 px-4">
+										<label
+											class="block text-coolGray-700 text-sm font-medium mb-2"
+											for="textInput10"
+											>Credit card number</label
+										>
+										<input
+											class="rounded-sm py-3 px-4 border border-coolGray-200 w-full outline-none focus:ring-1 ring-indigo-400"
+											id="textInput10"
+											type="text"
+											placeholder="Enter"
+										/>
+									</div>
+								</div>
+								<div class="flex flex-wrap gap-8 sm:gap-0 -mx-4">
+									<div class="w-full sm:w-1/2 px-4">
+										<label
+											class="block text-coolGray-700 text-sm font-medium mb-2"
+											for="textInput11"
+											>Expiration</label
+										>
+										<input
+											class="rounded-sm py-3 px-4 border border-coolGray-200 w-full mb-3 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput11"
+											type="text"
+											placeholder="Enter"
+										/>
+									</div>
+									<div class="w-full sm:w-1/2 px-4">
+										<label
+											class="block text-coolGray-700 text-sm font-medium mb-2"
+											for="textInput12"
+											>CVC</label
+										>
+										<input
+											class="w-full rounded-sm py-3 px-4 border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput12"
+											type="text"
+											placeholder="Enter"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-5/12 px-4 py-12 lg:py-20">
+					<div class="max-w-lg lg:max-w-sm mx-auto lg:mr-0">
+						<h2 class="text-rhino-700 text-3xl font-semibold mb-16 font-heading">Order Summary</h2>
+						<div class="p-6 bg-purple-100 rounded-xl mb-6">
+							<p class="text-rhino-800 text-sm mb-8">
+								Shipping and additional costs are calculated based on values you have
+								entered.
+							</p>
+							<div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
+								<p class="uppercase text-xs font-bold text-rhino-300">
+									Order subtotal
+								</p>
+								<p class="text-rhino-800 text-xs font-bold">$390.00</p>
+							</div>
+							<div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
+								<p class="uppercase text-xs font-bold text-rhino-300">
+									Shipping & handling
+								</p>
+								<p class="text-rhino-800 text-xs font-bold">$10.00</p>
+							</div>
+							<div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-2">
+								<p class="uppercase text-xs font-bold text-rhino-300">TAX</p>
+								<p class="text-rhino-800 text-xs font-bold">$0.00</p>
+							</div>
+							<div class="bg-white flex justify-between py-3 px-4 rounded-sm shadow-md mb-8">
+								<div
+									class="uppercase bg-orange-500 rounded-sm py-1 px-3 text-white text-xs font-bold tracking-widest"
+								>
+									Discount
+								</div>
+								<p class="text-orange-500 text-xs font-bold">20%</p>
+							</div>
+							<div class="flex justify-between items-center flex-wrap gap-4">
+								<h2 class="text-coolGray-800 text-lg font-semibold">Total</h2>
+								<p class="text-purple-500 text-lg font-semibold">$320.00</p>
+							</div>
+						</div>
+						<div class="p-6 bg-purple-100 rounded-xl">
+							<label class="text-sm text-coolGray-700 font-medium mb-2 block" for=""
+								>Enter promo code</label
+							>
+							<div class="flex flex-wrap gap-4 mb-6">
+								<input
+									class="flex-1 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm outline-none focus:ring-1 ring-indigo-400"
+									type="text"
+									value="EASDDGFHGE5423"
+								/>
+								<a
+									class="inline-block text-sm text-purple-500 font-medium py-3 px-4 rounded-sm border border-purple-500 hover:bg-purple-500 hover:text-white transition duration-200"
+									href="#"
+									>Apply</a
+								>
+							</div>
+							<a
+								class="inline-block w-full px-3 py-4 rounded-sm text-center text-white text-sm font-medium bg-purple-500 hover:bg-purple-600 transition duration-200"
+								href="#"
+								>Continue to Checkout</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

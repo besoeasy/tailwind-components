@@ -1,152 +1,351 @@
-<div> <div class="relative overflow-hidden">
-    <div class="hidden md:flex md:flex-col items-center fixed top-0 left-0 z-10 h-full w-32 bg-white px-4">
-      <button class="navbar-burger p-2 mt-12 mb-auto hover:text-blueGray-800 flex items-center focus:outline-none">
-        <svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="2" fill="currentColor"></rect><rect y="14" width="25" height="2" fill="currentColor"></rect></svg>
-      </button>
-    </div>
-    <section class="text-gray-50 font-heading font-medium relative bg-blueGray-100">
-      <nav class="flex justify-between w-full px-6 lg:px-12 py-8">
-        <div class="pr-12 flex w-full items-center justify-between">
-          <a class="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-y-1/2 md:-translate-x-1/2" href="#">
-            <img src="uinel-assets/logos/uinel-white-black.svg" alt="">
-          </a>
-          <div class="relative hidden md:block ml-auto">
-            <img class="absolute top-1/2 transform -translate-y-2/4 pl-6" src="uinel-assets/elements/navigations/search-gray-icon.svg" alt="">
-            <input class="rounded-full py-3 pl-12 pr-5 text-gray-300 font-heading font-medium text-base focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 outline-none" style="width: 145px;">
-          </div>
-        </div>
-        <button class="navbar-burger self-center md:hidden text-gray-400 hover:text-gray-500 focus:outline-none">
-          <svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="2" fill="currentColor"></rect><rect y="14" width="25" height="2" fill="currentColor"></rect></svg>
-        </button>
-      </nav>
-      <div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-        <nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
-          <div class="flex items-center pl-16 mb-8">
-            <a class="text-2xl text-gray-800 font-bold" href="#">
-              <img class="h-12" src="uinel-assets/logos/uinel-gray-black.svg" alt="">
-            </a>
-          </div>
-          <div class="flex items-center mb-10 px-10">
-            <a class="flex items-center ml-1" href="#">
-              <img class="ml-6" src="uinel-assets/elements/navigations/avatar-online.png" alt="">
-              <img class="ml-6" src="uinel-assets/elements/navigations/arrow-down-gray.svg" alt="">
-            </a>
-            <a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
-              <svg width="20" height="23" viewbox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M1 18.0121H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M8.87891 22H10.8789" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </a>
-          </div>
-          <div>
-            <ul>
-              <li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">New tools</a></li>
-              <li class="mb-1 px-10">
-                <a class="flex items-center pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">
-                  <span>Products</span>
-                  <svg class="ml-4" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
-                  </svg>
-                </a>
-              </li>
-              <li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="mt-auto px-10">
-            <button class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
-              <span class="block mt-px">New project</span>
-            </button>
-            <p class="mt-6 mb-4 text-center">
-              <span class="text-sm text-darkBlueGray-400">2021 © Uinel. All rights reserved.</span>
-            </p>
-          </div>
-        </nav>
-        <button class="navbar-close absolute top-5 p-6 right-5">
-          <div class="absolute top-3">
-            <span class="absolute w-px h-6 bg-black transform -rotate-45"></span>
-            <span class="absolute w-px h-6 bg-black transform rotate-45"></span>
-          </div>
-        </button>
-      </div>
-    </section>
-    <section class="overflow-hidden">
-      <div class="relative bg-blueGray-100">
-        <div class="container relative px-4 pb-20 md:pl-40 mx-auto">
-          <div class="relative pt-10 md:pt-24 mb-14 md:mb-0 z-20">
-            <span class="block mb-9 font-medium uppercase tracking-widest text-xs text-gray-300">Better communication and work</span>
-            <h1 class="font-heading font-medium leading-none text-9xl md:text-10xl xl:text-13xl mb-12 md:max-w-xl">Manage your work</h1>
-            <button class="py-4 px-10 mt-3 sm:mt-0 font-heading font-medium tracking-tighter text-xl text-white bg-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:bg-blue-600 rounded-xl" type="button">Get started</button>
-          </div>
-          <div class="hidden xl:block absolute right-0 top-0 -mr-40 mt-12 xl:max-w-max">
-            <img class="absolute right-0 top-48 hidden md:block" src="uinel-assets/images/heroes/orange-elipse.png" alt="">
-            <img class="relative w-5/6" src="uinel-assets/images/heroes/widget4.png" alt="">
-          </div>
-          <div class="relative xl:hidden">
-            <img class="absolute right-0 top-0 w-1/2" src="uinel-assets/images/heroes/orange-elipse.png" alt="">
-            <img class="relative w-1/2 mx-auto" src="uinel-assets/images/heroes/widget4.png" alt="">
-          </div>
-          <div class="flex flex-wrap justify-center -mx-4 pr-4 xl:mt-56 relative z-10">
-            <div class="w-full lg:w-1/3 px-4 xl:w-60 mb-10">
-              <div class="py-8 px-9 bg-white rounded-t-9xl">
-                <div class="flex items-center mb-6">
-                  <img src="uinel-assets/elements/heroes/orange-logo-39x39.svg" alt="">
-                  <span class="uppercase ml-4 text-gray-300 font-medium tracking-widest text-xs">Download</span>
-                </div>
-                <p class="mb-2 font-heading text-2xl leading-tight">Montserrat</p>
-                <span class="font-heading font-normal text-lg text-darkBlueGray-400">8.7</span>
-              </div>
-              <div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
-                <a class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40" href="#">
-                  <span class="mr-4">All fonts</span>
-                  <svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1L11 5H1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M8 9L11 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/3 px-4 xl:w-60 mb-10">
-              <div class="py-8 px-9 bg-white rounded-t-9xl">
-                <div class="flex items-center mb-6">
-                  <img src="uinel-assets/elements/heroes/smile-orange-39x39.svg" alt="">
-                  <span class="ml-4 font-medium uppercase tracking-widest text-xs text-gray-300">Blog</span>
-                </div>
-                <p class="mb-2 font-heading text-2xl leading-tight">Collaborate in real time</p>
-                <span class="font-heading font-normal text-lg text-darkBlueGray-400">1 oct</span>
-              </div>
-              <div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
-                <a class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40" href="#">
-                  <span class="mr-4">Articles</span>
-                  <svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1L11 5H1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M8 9L11 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/3 px-4 xl:w-60">
-              <div class="py-8 px-9 bg-white rounded-t-9xl">
-                <div class="flex items-center mb-6">
-                  <img src="uinel-assets/elements/heroes/star-orange-39x39.svg" alt="">
-                  <span class="ml-4 font-medium uppercase tracking-widest text-xs text-gray-300">New-in</span>
-                </div>
-                <p class="mb-2 font-heading text-2xl leading-tight">Great tools</p>
-                <span class="font-heading font-normal text-lg text-darkBlueGray-400">8.7</span>
-              </div>
-              <div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
-                <a class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40" href="#">
-                  <span class="mr-4">All tools</span>
-                  <svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1L11 5H1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M8 9L11 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div></div>
+<div>
+	<div class="relative overflow-hidden">
+		<div class="hidden md:flex md:flex-col items-center fixed top-0 left-0 z-10 h-full w-32 bg-white px-4">
+			<button class="navbar-burger p-2 mt-12 mb-auto hover:text-blueGray-800 flex items-center focus:outline-none">
+				<svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="25" height="2" fill="currentColor"></rect>
+					<rect y="14" width="25" height="2" fill="currentColor"></rect>
+				</svg>
+			</button>
+		</div>
+		<section class="text-gray-50 font-heading font-medium relative bg-blueGray-100">
+			<nav class="flex justify-between w-full px-6 lg:px-12 py-8">
+				<div class="pr-12 flex w-full items-center justify-between">
+					<a
+						class="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-y-1/2 md:-translate-x-1/2"
+						href="#"
+					>
+						<img src="https://shuffle.dev/uinel-assets/logos/uinel-white-black.svg" alt="" />
+					</a>
+					<div class="relative hidden md:block ml-auto">
+						<img
+							class="absolute top-1/2 transform -translate-y-2/4 pl-6"
+							src="https://shuffle.dev/uinel-assets/elements/navigations/search-gray-icon.svg"
+							alt=""
+						/>
+						<input
+							class="rounded-full py-3 pl-12 pr-5 text-gray-300 font-heading font-medium text-base focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 outline-none"
+							style="width: 145px;"
+						/>
+					</div>
+				</div>
+				<button class="navbar-burger self-center md:hidden text-gray-400 hover:text-gray-500 focus:outline-none">
+					<svg width="25" height="16" viewbox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="25" height="2" fill="currentColor"></rect>
+						<rect y="14" width="25" height="2" fill="currentColor"></rect>
+					</svg>
+				</button>
+			</nav>
+			<div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+				<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+				<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
+					<div class="flex items-center pl-16 mb-8">
+						<a class="text-2xl text-gray-800 font-bold" href="#">
+							<img
+								class="h-12"
+								src="https://shuffle.dev/uinel-assets/logos/uinel-gray-black.svg"
+								alt=""
+							/>
+						</a>
+					</div>
+					<div class="flex items-center mb-10 px-10">
+						<a class="flex items-center ml-1" href="#">
+							<img
+								class="ml-6"
+								src="https://shuffle.dev/uinel-assets/elements/navigations/avatar-online.png"
+								alt=""
+							/>
+							<img
+								class="ml-6"
+								src="https://shuffle.dev/uinel-assets/elements/navigations/arrow-down-gray.svg"
+								alt=""
+							/>
+						</a>
+						<a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
+							<svg
+								width="20"
+								height="23"
+								viewbox="0 0 20 23"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+								<path
+									d="M1 18.0121H19"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+								<path
+									d="M8.87891 22H10.8789"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</a>
+					</div>
+					<div>
+						<ul>
+							<li class="mb-1 px-10">
+								<a
+									class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+									>New tools</a
+								>
+							</li>
+							<li class="mb-1 px-10">
+								<a
+									class="flex items-center pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+								>
+									<span>Products</span>
+									<svg
+										class="ml-4"
+										width="8"
+										height="5"
+										viewbox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</li>
+							<li class="mb-1 px-10">
+								<a
+									class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl"
+									href="#"
+									>Pricing</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="mt-auto px-10">
+						<button
+							class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full"
+						>
+							<span class="block mt-px">New project</span>
+						</button>
+						<p class="mt-6 mb-4 text-center">
+							<span class="text-sm text-darkBlueGray-400"
+								>2021 © Uinel. All rights reserved.</span
+							>
+						</p>
+					</div>
+				</nav>
+				<button class="navbar-close absolute top-5 p-6 right-5">
+					<div class="absolute top-3">
+						<span class="absolute w-px h-6 bg-black transform -rotate-45"></span>
+						<span class="absolute w-px h-6 bg-black transform rotate-45"></span>
+					</div>
+				</button>
+			</div>
+		</section>
+		<section class="overflow-hidden">
+			<div class="relative bg-blueGray-100">
+				<div class="container relative px-4 pb-20 md:pl-40 mx-auto">
+					<div class="relative pt-10 md:pt-24 mb-14 md:mb-0 z-20">
+						<span class="block mb-9 font-medium uppercase tracking-widest text-xs text-gray-300"
+							>Better communication and work</span
+						>
+						<h1
+							class="font-heading font-medium leading-none text-9xl md:text-10xl xl:text-13xl mb-12 md:max-w-xl"
+						>
+							Manage your work
+						</h1>
+						<button
+							class="py-4 px-10 mt-3 sm:mt-0 font-heading font-medium tracking-tighter text-xl text-white bg-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:bg-blue-600 rounded-xl"
+							type="button"
+						>
+							Get started
+						</button>
+					</div>
+					<div class="hidden xl:block absolute right-0 top-0 -mr-40 mt-12 xl:max-w-max">
+						<img
+							class="absolute right-0 top-48 hidden md:block"
+							src="https://shuffle.dev/uinel-assets/images/heroes/orange-elipse.png"
+							alt=""
+						/>
+						<img
+							class="relative w-5/6"
+							src="https://shuffle.dev/uinel-assets/images/heroes/widget4.png"
+							alt=""
+						/>
+					</div>
+					<div class="relative xl:hidden">
+						<img
+							class="absolute right-0 top-0 w-1/2"
+							src="https://shuffle.dev/uinel-assets/images/heroes/orange-elipse.png"
+							alt=""
+						/>
+						<img
+							class="relative w-1/2 mx-auto"
+							src="https://shuffle.dev/uinel-assets/images/heroes/widget4.png"
+							alt=""
+						/>
+					</div>
+					<div class="flex flex-wrap justify-center -mx-4 pr-4 xl:mt-56 relative z-10">
+						<div class="w-full lg:w-1/3 px-4 xl:w-60 mb-10">
+							<div class="py-8 px-9 bg-white rounded-t-9xl">
+								<div class="flex items-center mb-6">
+									<img
+										src="https://shuffle.dev/uinel-assets/elements/heroes/orange-logo-39x39.svg"
+										alt=""
+									/>
+									<span
+										class="uppercase ml-4 text-gray-300 font-medium tracking-widest text-xs"
+										>Download</span
+									>
+								</div>
+								<p class="mb-2 font-heading text-2xl leading-tight">Montserrat</p>
+								<span class="font-heading font-normal text-lg text-darkBlueGray-400"
+									>8.7</span
+								>
+							</div>
+							<div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
+								<a
+									class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40"
+									href="#"
+								>
+									<span class="mr-4">All fonts</span>
+									<svg
+										width="12"
+										height="10"
+										viewbox="0 0 12 10"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M8 1L11 5H1"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M8 9L11 5"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/3 px-4 xl:w-60 mb-10">
+							<div class="py-8 px-9 bg-white rounded-t-9xl">
+								<div class="flex items-center mb-6">
+									<img
+										src="https://shuffle.dev/uinel-assets/elements/heroes/smile-orange-39x39.svg"
+										alt=""
+									/>
+									<span
+										class="ml-4 font-medium uppercase tracking-widest text-xs text-gray-300"
+										>Blog</span
+									>
+								</div>
+								<p class="mb-2 font-heading text-2xl leading-tight">
+									Collaborate in real time
+								</p>
+								<span class="font-heading font-normal text-lg text-darkBlueGray-400"
+									>1 oct</span
+								>
+							</div>
+							<div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
+								<a
+									class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40"
+									href="#"
+								>
+									<span class="mr-4">Articles</span>
+									<svg
+										width="12"
+										height="10"
+										viewbox="0 0 12 10"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M8 1L11 5H1"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M8 9L11 5"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/3 px-4 xl:w-60">
+							<div class="py-8 px-9 bg-white rounded-t-9xl">
+								<div class="flex items-center mb-6">
+									<img
+										src="https://shuffle.dev/uinel-assets/elements/heroes/star-orange-39x39.svg"
+										alt=""
+									/>
+									<span
+										class="ml-4 font-medium uppercase tracking-widest text-xs text-gray-300"
+										>New-in</span
+									>
+								</div>
+								<p class="mb-2 font-heading text-2xl leading-tight">Great tools</p>
+								<span class="font-heading font-normal text-lg text-darkBlueGray-400"
+									>8.7</span
+								>
+							</div>
+							<div class="py-5 text-center bg-indigo-100 rounded-b-9xl">
+								<a
+									class="inline-flex items-center font-bold tracking-tight text-xl leading-snug text-blue-500 hover:text-blue-600 border-b border-blue-500 hover:border-blue-600 border-opacity-40"
+									href="#"
+								>
+									<span class="mr-4">All tools</span>
+									<svg
+										width="12"
+										height="10"
+										viewbox="0 0 12 10"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M8 1L11 5H1"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M8 9L11 5"
+											stroke="currentColor"
+											stroke-width="1.2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

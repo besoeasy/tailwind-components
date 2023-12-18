@@ -1,273 +1,657 @@
-<div> <section class="relative bg-white overflow-hidden">
-    <div class="container mx-auto px-4">
-      <div class="max-w-lg mx-auto lg:max-w-none py-20">
-        <div class="border border-coolGray-200 rounded-xl flex-1">
-          <div class="flex flex-wrap">
-            <div class="w-full lg:w-1/3 md:border-r md:border-coolGray-200">
-              <div class="p-8">
-                <div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
-                  <h2 class="text-rhino-700 text-xl font-semibold font-heading">Shipping Address</h2>
-                </div>
-                <div class="mb-6">
-                  <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput1">Email Address</label>
-                  <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput1" type="text" placeholder="Enter">
-                </div>
-                <div class="mb-6">
-                  <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput2">First name</label>
-                  <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput2" type="text" placeholder="Enter">
-                </div>
-                <div class="mb-6">
-                  <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput3">Last name</label>
-                  <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput3" type="text" placeholder="Enter">
-                </div>
-                <div class="mb-6">
-                  <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput4">Street Address</label>
-                  <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 mb-3 outline-none focus:ring-1 ring-indigo-400" id="textInput4" type="text">
-                  <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput5" type="text">
-                </div>
-                <div class="mb-6 flex flex-wrap gap-4">
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="">Country</label>
-                    <select class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400">
-                      <option value="">United States</option>
-                      <option value="">United States</option>
-                      <option value="">United States</option>
-                    </select>
-                  </div>
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="">State</label>
-                    <select class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400">
-                      <option value="">California</option>
-                      <option value="">California</option>
-                      <option value="">California</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="mb-6 flex flex-wrap gap-4">
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="">City</label>
-                    <select class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400">
-                      <option value="">Los Angeles</option>
-                      <option value="">Los Angeles</option>
-                      <option value="">Los Angeles</option>
-                    </select>
-                  </div>
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput6">Zip/postal code</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput6" type="text">
-                  </div>
-                </div>
-                <div class="mb-6 flex flex-wrap gap-4">
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput7">Company</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput7" type="text">
-                  </div>
-                  <div class="flex-1">
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput8">Phone Number</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput8" type="text">
-                  </div>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="relative">
-                    <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox1" type="checkbox">
-                    <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                      <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <label class="block text-gray-700" for="checkbox1">I have a diffrent billing address</label>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/3 md:border-r md:border-coolGray-200">
-              <div class="p-8">
-                <div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
-                  <h2 class="text-rhino-700 text-xl font-semibold font-heading">Shipping Methods</h2>
-                </div>
-                <div class="mb-6">
-                  <span class="block mb-2 text-coolGray-700 font-medium text-sm">Flat rate</span>
-                  <div class="flex items-center gap-3">
-                    <div class="relative">
-                      <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox2" type="checkbox">
-                      <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                        <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <label class="block text-gray-700" for="checkbox2">
-                      <span>Fixed</span>
-                      <span class="font-bold text-black">$0.00</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="mb-24">
-                  <span class="block mb-2 text-coolGray-700 font-medium text-sm">Express</span>
-                  <div class="flex items-center gap-3">
-                    <div class="relative">
-                      <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox3" type="checkbox">
-                      <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                        <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <label class="block text-gray-700" for="checkbox3">
-                      <span>Express shipping</span>
-                      <span class="font-bold text-black">$0.00</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
-                  <h2 class="text-rhino-700 text-xl font-semibold font-heading">Payment Methods</h2>
-                </div>
-                <div class="flex items-center gap-3 mb-4">
-                  <div class="relative">
-                    <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox4" type="checkbox">
-                    <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                      <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <label class="block text-gray-700" for="checkbox4">Cash on Delivery</label>
-                </div>
-                <div class="flex items-center gap-3 mb-4">
-                  <div class="relative">
-                    <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox5" type="checkbox" checked="">
-                    <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                      <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <label class="block text-gray-700" for="checkbox5">Credit card</label>
-                </div>
-                <div class="rounded-md bg-coolGray-50 p-6 flex flex-col gap-4 mb-4">
-                  <div>
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput9">Name on card</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput9" type="text">
-                  </div>
-                  <div>
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput10">Credit Card Type</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput10" type="text">
-                  </div>
-                  <div>
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput11">Credit Card Number</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput11" type="text">
-                  </div>
-                  <div>
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="">Expiration date</label>
-                    <div class="flex flex-wrap gap-4">
-                      <select class="py-3 px-4 rounded-sm border border-coolGray-200 flex-1 outline-none focus:ring-1 ring-indigo-400">
-                        <option value="">01.09.2023</option>
-                        <option value="">01.09.2023</option>
-                        <option value="">01.09.2023</option>
-                      </select>
-                      <select class="py-3 px-4 rounded-sm border border-coolGray-200 flex-1 outline-none focus:ring-1 ring-indigo-400">
-                        <option value="">10.09.2023</option>
-                        <option value="">10.09.2023</option>
-                        <option value="">10.09.2023</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label class="block mb-2 text-coolGray-700 font-medium text-sm" for="textInput12">CVC</label>
-                    <input class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" id="textInput12" type="text">
-                  </div>
-                </div>
-                <div class="flex items-center gap-3 mb-2">
-                  <div class="relative">
-                    <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox6" type="checkbox">
-                    <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                      <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <label class="block text-gray-700" for="checkbox6">Debit card</label>
-                </div>
-                <div class="flex items-center gap-3">
-                  <div class="relative">
-                    <input class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0" id="checkbox7" type="checkbox">
-                    <div class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm">
-                      <svg class="hidden" width="10" height="7" viewbox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <label class="block text-gray-700" for="checkbox7">PayPal</label>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/3">
-              <div class="p-8">
-                <div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
-                  <h2 class="text-rhino-700 text-xl font-semibold font-heading">Order Summary</h2>
-                </div>
-                <div class="flex gap-4 pb-6 border-b border-coolGray-200">
-                  <div class="bg-coolGray-100 rounded-lg flex items-center justify-center">
-                    <img src="coleos-assets/checkout/shoe-image.png" alt="">
-                  </div>
-                  <div class="flex-1">
-                    <div class="flex items-center justify-between flex-wrap gap-4 mb-5">
-                      <p class="text-sm font-medium text-coolGray-700">GrayBlack SportLock</p>
-                      <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                          <path d="M6.66667 12C6.84348 12 7.01305 11.9298 7.13807 11.8048C7.2631 11.6798 7.33333 11.5102 7.33333 11.3334V7.33337C7.33333 7.15656 7.2631 6.98699 7.13807 6.86197C7.01305 6.73695 6.84348 6.66671 6.66667 6.66671C6.48986 6.66671 6.32029 6.73695 6.19526 6.86197C6.07024 6.98699 6 7.15656 6 7.33337V11.3334C6 11.5102 6.07024 11.6798 6.19526 11.8048C6.32029 11.9298 6.48986 12 6.66667 12ZM13.3333 4.00004H10.6667V3.33337C10.6667 2.80294 10.456 2.29423 10.0809 1.91916C9.70581 1.54409 9.1971 1.33337 8.66667 1.33337H7.33333C6.8029 1.33337 6.29419 1.54409 5.91912 1.91916C5.54405 2.29423 5.33333 2.80294 5.33333 3.33337V4.00004H2.66667C2.48986 4.00004 2.32029 4.07028 2.19526 4.1953C2.07024 4.32033 2 4.4899 2 4.66671C2 4.84352 2.07024 5.01309 2.19526 5.13811C2.32029 5.26314 2.48986 5.33337 2.66667 5.33337H3.33333V12.6667C3.33333 13.1971 3.54405 13.7058 3.91912 14.0809C4.29419 14.456 4.8029 14.6667 5.33333 14.6667H10.6667C11.1971 14.6667 11.7058 14.456 12.0809 14.0809C12.456 13.7058 12.6667 13.1971 12.6667 12.6667V5.33337H13.3333C13.5101 5.33337 13.6797 5.26314 13.8047 5.13811C13.9298 5.01309 14 4.84352 14 4.66671C14 4.4899 13.9298 4.32033 13.8047 4.1953C13.6797 4.07028 13.5101 4.00004 13.3333 4.00004ZM6.66667 3.33337C6.66667 3.15656 6.7369 2.98699 6.86193 2.86197C6.98695 2.73695 7.15652 2.66671 7.33333 2.66671H8.66667C8.84348 2.66671 9.01305 2.73695 9.13807 2.86197C9.2631 2.98699 9.33333 3.15656 9.33333 3.33337V4.00004H6.66667V3.33337ZM11.3333 12.6667C11.3333 12.8435 11.2631 13.0131 11.1381 13.1381C11.013 13.2631 10.8435 13.3334 10.6667 13.3334H5.33333C5.15652 13.3334 4.98695 13.2631 4.86193 13.1381C4.7369 13.0131 4.66667 12.8435 4.66667 12.6667V5.33337H11.3333V12.6667ZM9.33333 12C9.51014 12 9.67971 11.9298 9.80474 11.8048C9.92976 11.6798 10 11.5102 10 11.3334V7.33337C10 7.15656 9.92976 6.98699 9.80474 6.86197C9.67971 6.73695 9.51014 6.66671 9.33333 6.66671C9.15652 6.66671 8.98695 6.73695 8.86193 6.86197C8.73691 6.98699 8.66667 7.15656 8.66667 7.33337V11.3334C8.66667 11.5102 8.73691 11.6798 8.86193 11.8048C8.98695 11.9298 9.15652 12 9.33333 12Z" fill="#FB5622"></path>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="flex items-center justify-between flex-wrap gap-4">
-                      <div class="rounded-sm py-2 px-4 border border-coolGray-200 flex items-center gap-4">
-                        <div class="cursor-pointer text-coolGray-300 hover:text-coolGray-400 transition duration-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                            <path d="M12.6666 7.33337H3.33329C3.15648 7.33337 2.98691 7.40361 2.86189 7.52864C2.73686 7.65366 2.66663 7.82323 2.66663 8.00004C2.66663 8.17685 2.73686 8.34642 2.86189 8.47145C2.98691 8.59647 3.15648 8.66671 3.33329 8.66671H12.6666C12.8434 8.66671 13.013 8.59647 13.138 8.47145C13.2631 8.34642 13.3333 8.17685 13.3333 8.00004C13.3333 7.82323 13.2631 7.65366 13.138 7.52864C13.013 7.40361 12.8434 7.33337 12.6666 7.33337Z" fill="currentColor"></path>
-                          </svg>
-                        </div>
-                        <span class="text-sm text-coolGray-700">2</span>
-                        <div class="cursor-pointer text-coolGray-300 hover:text-coolGray-400 transition duration-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                            <path d="M12.6666 7.33329H8.66663V3.33329C8.66663 3.15648 8.59639 2.98691 8.47136 2.86189C8.34634 2.73686 8.17677 2.66663 7.99996 2.66663C7.82315 2.66663 7.65358 2.73686 7.52855 2.86189C7.40353 2.98691 7.33329 3.15648 7.33329 3.33329V7.33329H3.33329C3.15648 7.33329 2.98691 7.40353 2.86189 7.52855C2.73686 7.65358 2.66663 7.82315 2.66663 7.99996C2.66663 8.17677 2.73686 8.34634 2.86189 8.47136C2.98691 8.59639 3.15648 8.66663 3.33329 8.66663H7.33329V12.6666C7.33329 12.8434 7.40353 13.013 7.52855 13.138C7.65358 13.2631 7.82315 13.3333 7.99996 13.3333C8.17677 13.3333 8.34634 13.2631 8.47136 13.138C8.59639 13.013 8.66663 12.8434 8.66663 12.6666V8.66663H12.6666C12.8434 8.66663 13.013 8.59639 13.138 8.47136C13.2631 8.34634 13.3333 8.17677 13.3333 7.99996C13.3333 7.82315 13.2631 7.65358 13.138 7.52855C13.013 7.40353 12.8434 7.33329 12.6666 7.33329Z" fill="currentColor"></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <h2 class="text-rhino-500 font-semibold">$132.00</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex justify-between py-3 px-4 rounded-sm mb-2 border-b border-coolGray-200 pb-4">
-                  <p class="uppercase text-xs font-bold text-rhino-300">Card subtotal</p>
-                  <p class="text-rhino-800 text-xs font-bold">$199.00</p>
-                </div>
-                <div class="flex justify-between py-3 px-4 rounded-sm mb-2 border-b border-coolGray-200 pb-4">
-                  <p class="uppercase text-xs font-bold text-rhino-300">Shipping</p>
-                  <p class="text-rhino-800 text-xs font-bold">$10.00</p>
-                </div>
-                <div class="flex justify-between py-3 px-4 mb-8 border-b border-coolGray-200 pb-4">
-                  <div class="uppercase bg-orange-500 rounded-xl py-1 px-3 text-white text-xs font-bold tracking-widest">Discount</div>
-                  <p class="text-orange-500 text-xs font-bold">20%</p>
-                </div>
-                <div class="flex justify-between items-center flex-wrap gap-4 mb-8">
-                  <h2 class="text-coolGray-800 text-lg font-semibold">Total</h2>
-                  <p class="text-purple-500 text-lg font-semibold">$167.20</p>
-                </div>
-                <div class="mb-6">
-                  <label class="text-sm text-coolGray-700 font-medium mb-2 block" for="">Apply discount code</label>
-                  <div class="flex flex-wrap gap-4 mb-6">
-                    <input class="flex-1 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400" type="text" value="EASDDGFHGE5423">
-                    <a class="inline-block text-sm text-purple-500 font-medium py-3 px-4 rounded-sm border border-purple-500 hover:bg-purple-500 hover:text-white transition duration-200" href="#">Apply</a>
-                  </div>
-                </div>
-                <div>
-                  <label class="text-sm text-coolGray-700 font-medium mb-2 block" for="textArea1">Order comment</label>
-                  <textarea class="w-full mb-6 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400 resize-none" id="textArea1" rows="6"></textarea><a class="inline-block w-full px-3 py-4 rounded-sm text-center text-white text-sm font-medium bg-purple-500 hover:bg-purple-600 transition duration-200" href="#">Continue to Checkout</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section></div>
+<div>
+	<section class="relative bg-white overflow-hidden">
+		<div class="container mx-auto px-4">
+			<div class="max-w-lg mx-auto lg:max-w-none py-20">
+				<div class="border border-coolGray-200 rounded-xl flex-1">
+					<div class="flex flex-wrap">
+						<div class="w-full lg:w-1/3 md:border-r md:border-coolGray-200">
+							<div class="p-8">
+								<div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
+									<h2
+										class="text-rhino-700 text-xl font-semibold font-heading"
+									>
+										Shipping Address
+									</h2>
+								</div>
+								<div class="mb-6">
+									<label
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										for="textInput1"
+										>Email Address</label
+									>
+									<input
+										class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										id="textInput1"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="mb-6">
+									<label
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										for="textInput2"
+										>First name</label
+									>
+									<input
+										class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										id="textInput2"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="mb-6">
+									<label
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										for="textInput3"
+										>Last name</label
+									>
+									<input
+										class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										id="textInput3"
+										type="text"
+										placeholder="Enter"
+									/>
+								</div>
+								<div class="mb-6">
+									<label
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										for="textInput4"
+										>Street Address</label
+									>
+									<input
+										class="w-full py-3 px-4 rounded-sm border border-coolGray-200 mb-3 outline-none focus:ring-1 ring-indigo-400"
+										id="textInput4"
+										type="text"
+									/>
+									<input
+										class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										id="textInput5"
+										type="text"
+									/>
+								</div>
+								<div class="mb-6 flex flex-wrap gap-4">
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for=""
+											>Country</label
+										>
+										<select
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										>
+											<option value="">United States</option>
+											<option value="">United States</option>
+											<option value="">United States</option>
+										</select>
+									</div>
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for=""
+											>State</label
+										>
+										<select
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										>
+											<option value="">California</option>
+											<option value="">California</option>
+											<option value="">California</option>
+										</select>
+									</div>
+								</div>
+								<div class="mb-6 flex flex-wrap gap-4">
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for=""
+											>City</label
+										>
+										<select
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+										>
+											<option value="">Los Angeles</option>
+											<option value="">Los Angeles</option>
+											<option value="">Los Angeles</option>
+										</select>
+									</div>
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput6"
+											>Zip/postal code</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput6"
+											type="text"
+										/>
+									</div>
+								</div>
+								<div class="mb-6 flex flex-wrap gap-4">
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput7"
+											>Company</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput7"
+											type="text"
+										/>
+									</div>
+									<div class="flex-1">
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput8"
+											>Phone Number</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput8"
+											type="text"
+										/>
+									</div>
+								</div>
+								<div class="flex items-center gap-3">
+									<div class="relative">
+										<input
+											class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+											id="checkbox1"
+											type="checkbox"
+										/>
+										<div
+											class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+										>
+											<svg
+												class="hidden"
+												width="10"
+												height="7"
+												viewbox="0 0 10 7"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<label class="block text-gray-700" for="checkbox1"
+										>I have a diffrent billing address</label
+									>
+								</div>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/3 md:border-r md:border-coolGray-200">
+							<div class="p-8">
+								<div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
+									<h2
+										class="text-rhino-700 text-xl font-semibold font-heading"
+									>
+										Shipping Methods
+									</h2>
+								</div>
+								<div class="mb-6">
+									<span
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										>Flat rate</span
+									>
+									<div class="flex items-center gap-3">
+										<div class="relative">
+											<input
+												class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+												id="checkbox2"
+												type="checkbox"
+											/>
+											<div
+												class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+											>
+												<svg
+													class="hidden"
+													width="10"
+													height="7"
+													viewbox="0 0 10 7"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<label
+											class="block text-gray-700"
+											for="checkbox2"
+										>
+											<span>Fixed</span>
+											<span class="font-bold text-black"
+												>$0.00</span
+											>
+										</label>
+									</div>
+								</div>
+								<div class="mb-24">
+									<span
+										class="block mb-2 text-coolGray-700 font-medium text-sm"
+										>Express</span
+									>
+									<div class="flex items-center gap-3">
+										<div class="relative">
+											<input
+												class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+												id="checkbox3"
+												type="checkbox"
+											/>
+											<div
+												class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+											>
+												<svg
+													class="hidden"
+													width="10"
+													height="7"
+													viewbox="0 0 10 7"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+										</div>
+										<label
+											class="block text-gray-700"
+											for="checkbox3"
+										>
+											<span>Express shipping</span>
+											<span class="font-bold text-black"
+												>$0.00</span
+											>
+										</label>
+									</div>
+								</div>
+								<div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
+									<h2
+										class="text-rhino-700 text-xl font-semibold font-heading"
+									>
+										Payment Methods
+									</h2>
+								</div>
+								<div class="flex items-center gap-3 mb-4">
+									<div class="relative">
+										<input
+											class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+											id="checkbox4"
+											type="checkbox"
+										/>
+										<div
+											class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+										>
+											<svg
+												class="hidden"
+												width="10"
+												height="7"
+												viewbox="0 0 10 7"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<label class="block text-gray-700" for="checkbox4"
+										>Cash on Delivery</label
+									>
+								</div>
+								<div class="flex items-center gap-3 mb-4">
+									<div class="relative">
+										<input
+											class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+											id="checkbox5"
+											type="checkbox"
+											checked=""
+										/>
+										<div
+											class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+										>
+											<svg
+												class="hidden"
+												width="10"
+												height="7"
+												viewbox="0 0 10 7"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<label class="block text-gray-700" for="checkbox5"
+										>Credit card</label
+									>
+								</div>
+								<div class="rounded-md bg-coolGray-50 p-6 flex flex-col gap-4 mb-4">
+									<div>
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput9"
+											>Name on card</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput9"
+											type="text"
+										/>
+									</div>
+									<div>
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput10"
+											>Credit Card Type</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput10"
+											type="text"
+										/>
+									</div>
+									<div>
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput11"
+											>Credit Card Number</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput11"
+											type="text"
+										/>
+									</div>
+									<div>
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for=""
+											>Expiration date</label
+										>
+										<div class="flex flex-wrap gap-4">
+											<select
+												class="py-3 px-4 rounded-sm border border-coolGray-200 flex-1 outline-none focus:ring-1 ring-indigo-400"
+											>
+												<option value="">
+													01.09.2023
+												</option>
+												<option value="">
+													01.09.2023
+												</option>
+												<option value="">
+													01.09.2023
+												</option>
+											</select>
+											<select
+												class="py-3 px-4 rounded-sm border border-coolGray-200 flex-1 outline-none focus:ring-1 ring-indigo-400"
+											>
+												<option value="">
+													10.09.2023
+												</option>
+												<option value="">
+													10.09.2023
+												</option>
+												<option value="">
+													10.09.2023
+												</option>
+											</select>
+										</div>
+									</div>
+									<div>
+										<label
+											class="block mb-2 text-coolGray-700 font-medium text-sm"
+											for="textInput12"
+											>CVC</label
+										>
+										<input
+											class="w-full py-3 px-4 rounded-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											id="textInput12"
+											type="text"
+										/>
+									</div>
+								</div>
+								<div class="flex items-center gap-3 mb-2">
+									<div class="relative">
+										<input
+											class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+											id="checkbox6"
+											type="checkbox"
+										/>
+										<div
+											class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+										>
+											<svg
+												class="hidden"
+												width="10"
+												height="7"
+												viewbox="0 0 10 7"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<label class="block text-gray-700" for="checkbox6"
+										>Debit card</label
+									>
+								</div>
+								<div class="flex items-center gap-3">
+									<div class="relative">
+										<input
+											class="custom-checkbox-1 opacity-0 absolute z-10 h-5 w-5 top-0 left-0"
+											id="checkbox7"
+											type="checkbox"
+										/>
+										<div
+											class="border border-coolGray-200 w-5 h-5 flex justify-center items-center rounded-sm"
+										>
+											<svg
+												class="hidden"
+												width="10"
+												height="7"
+												viewbox="0 0 10 7"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.76764 0.22597C9.45824 -0.0754185 8.95582 -0.0752285 8.64601 0.22597L3.59787 5.13702L1.35419 2.95437C1.04438 2.65298 0.542174 2.65298 0.23236 2.95437C-0.0774534 3.25576 -0.0774534 3.74431 0.23236 4.0457L3.03684 6.77391C3.19165 6.92451 3.39464 7 3.59765 7C3.80067 7 4.00386 6.9247 4.15867 6.77391L9.76764 1.31727C10.0775 1.01609 10.0775 0.52734 9.76764 0.22597Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<label class="block text-gray-700" for="checkbox7"
+										>PayPal</label
+									>
+								</div>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/3">
+							<div class="p-8">
+								<div class="bg-purple-100 rounded-lg p-4 text-center mb-6">
+									<h2
+										class="text-rhino-700 text-xl font-semibold font-heading"
+									>
+										Order Summary
+									</h2>
+								</div>
+								<div class="flex gap-4 pb-6 border-b border-coolGray-200">
+									<div
+										class="bg-coolGray-100 rounded-lg flex items-center justify-center"
+									>
+										<img
+											src="https://shuffle.dev/coleos-assets/checkout/shoe-image.png"
+											alt=""
+										/>
+									</div>
+									<div class="flex-1">
+										<div
+											class="flex items-center justify-between flex-wrap gap-4 mb-5"
+										>
+											<p
+												class="text-sm font-medium text-coolGray-700"
+											>
+												GrayBlack SportLock
+											</p>
+											<a href="#">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="16"
+													height="16"
+													viewbox="0 0 16 16"
+													fill="none"
+												>
+													<path
+														d="M6.66667 12C6.84348 12 7.01305 11.9298 7.13807 11.8048C7.2631 11.6798 7.33333 11.5102 7.33333 11.3334V7.33337C7.33333 7.15656 7.2631 6.98699 7.13807 6.86197C7.01305 6.73695 6.84348 6.66671 6.66667 6.66671C6.48986 6.66671 6.32029 6.73695 6.19526 6.86197C6.07024 6.98699 6 7.15656 6 7.33337V11.3334C6 11.5102 6.07024 11.6798 6.19526 11.8048C6.32029 11.9298 6.48986 12 6.66667 12ZM13.3333 4.00004H10.6667V3.33337C10.6667 2.80294 10.456 2.29423 10.0809 1.91916C9.70581 1.54409 9.1971 1.33337 8.66667 1.33337H7.33333C6.8029 1.33337 6.29419 1.54409 5.91912 1.91916C5.54405 2.29423 5.33333 2.80294 5.33333 3.33337V4.00004H2.66667C2.48986 4.00004 2.32029 4.07028 2.19526 4.1953C2.07024 4.32033 2 4.4899 2 4.66671C2 4.84352 2.07024 5.01309 2.19526 5.13811C2.32029 5.26314 2.48986 5.33337 2.66667 5.33337H3.33333V12.6667C3.33333 13.1971 3.54405 13.7058 3.91912 14.0809C4.29419 14.456 4.8029 14.6667 5.33333 14.6667H10.6667C11.1971 14.6667 11.7058 14.456 12.0809 14.0809C12.456 13.7058 12.6667 13.1971 12.6667 12.6667V5.33337H13.3333C13.5101 5.33337 13.6797 5.26314 13.8047 5.13811C13.9298 5.01309 14 4.84352 14 4.66671C14 4.4899 13.9298 4.32033 13.8047 4.1953C13.6797 4.07028 13.5101 4.00004 13.3333 4.00004ZM6.66667 3.33337C6.66667 3.15656 6.7369 2.98699 6.86193 2.86197C6.98695 2.73695 7.15652 2.66671 7.33333 2.66671H8.66667C8.84348 2.66671 9.01305 2.73695 9.13807 2.86197C9.2631 2.98699 9.33333 3.15656 9.33333 3.33337V4.00004H6.66667V3.33337ZM11.3333 12.6667C11.3333 12.8435 11.2631 13.0131 11.1381 13.1381C11.013 13.2631 10.8435 13.3334 10.6667 13.3334H5.33333C5.15652 13.3334 4.98695 13.2631 4.86193 13.1381C4.7369 13.0131 4.66667 12.8435 4.66667 12.6667V5.33337H11.3333V12.6667ZM9.33333 12C9.51014 12 9.67971 11.9298 9.80474 11.8048C9.92976 11.6798 10 11.5102 10 11.3334V7.33337C10 7.15656 9.92976 6.98699 9.80474 6.86197C9.67971 6.73695 9.51014 6.66671 9.33333 6.66671C9.15652 6.66671 8.98695 6.73695 8.86193 6.86197C8.73691 6.98699 8.66667 7.15656 8.66667 7.33337V11.3334C8.66667 11.5102 8.73691 11.6798 8.86193 11.8048C8.98695 11.9298 9.15652 12 9.33333 12Z"
+														fill="#FB5622"
+													></path>
+												</svg>
+											</a>
+										</div>
+										<div
+											class="flex items-center justify-between flex-wrap gap-4"
+										>
+											<div
+												class="rounded-sm py-2 px-4 border border-coolGray-200 flex items-center gap-4"
+											>
+												<div
+													class="cursor-pointer text-coolGray-300 hover:text-coolGray-400 transition duration-200"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														viewbox="0 0 16 16"
+														fill="none"
+													>
+														<path
+															d="M12.6666 7.33337H3.33329C3.15648 7.33337 2.98691 7.40361 2.86189 7.52864C2.73686 7.65366 2.66663 7.82323 2.66663 8.00004C2.66663 8.17685 2.73686 8.34642 2.86189 8.47145C2.98691 8.59647 3.15648 8.66671 3.33329 8.66671H12.6666C12.8434 8.66671 13.013 8.59647 13.138 8.47145C13.2631 8.34642 13.3333 8.17685 13.3333 8.00004C13.3333 7.82323 13.2631 7.65366 13.138 7.52864C13.013 7.40361 12.8434 7.33337 12.6666 7.33337Z"
+															fill="currentColor"
+														></path>
+													</svg>
+												</div>
+												<span
+													class="text-sm text-coolGray-700"
+													>2</span
+												>
+												<div
+													class="cursor-pointer text-coolGray-300 hover:text-coolGray-400 transition duration-200"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														viewbox="0 0 16 16"
+														fill="none"
+													>
+														<path
+															d="M12.6666 7.33329H8.66663V3.33329C8.66663 3.15648 8.59639 2.98691 8.47136 2.86189C8.34634 2.73686 8.17677 2.66663 7.99996 2.66663C7.82315 2.66663 7.65358 2.73686 7.52855 2.86189C7.40353 2.98691 7.33329 3.15648 7.33329 3.33329V7.33329H3.33329C3.15648 7.33329 2.98691 7.40353 2.86189 7.52855C2.73686 7.65358 2.66663 7.82315 2.66663 7.99996C2.66663 8.17677 2.73686 8.34634 2.86189 8.47136C2.98691 8.59639 3.15648 8.66663 3.33329 8.66663H7.33329V12.6666C7.33329 12.8434 7.40353 13.013 7.52855 13.138C7.65358 13.2631 7.82315 13.3333 7.99996 13.3333C8.17677 13.3333 8.34634 13.2631 8.47136 13.138C8.59639 13.013 8.66663 12.8434 8.66663 12.6666V8.66663H12.6666C12.8434 8.66663 13.013 8.59639 13.138 8.47136C13.2631 8.34634 13.3333 8.17677 13.3333 7.99996C13.3333 7.82315 13.2631 7.65358 13.138 7.52855C13.013 7.40353 12.8434 7.33329 12.6666 7.33329Z"
+															fill="currentColor"
+														></path>
+													</svg>
+												</div>
+											</div>
+											<h2
+												class="text-rhino-500 font-semibold"
+											>
+												$132.00
+											</h2>
+										</div>
+									</div>
+								</div>
+								<div
+									class="flex justify-between py-3 px-4 rounded-sm mb-2 border-b border-coolGray-200 pb-4"
+								>
+									<p class="uppercase text-xs font-bold text-rhino-300">
+										Card subtotal
+									</p>
+									<p class="text-rhino-800 text-xs font-bold">$199.00</p>
+								</div>
+								<div
+									class="flex justify-between py-3 px-4 rounded-sm mb-2 border-b border-coolGray-200 pb-4"
+								>
+									<p class="uppercase text-xs font-bold text-rhino-300">
+										Shipping
+									</p>
+									<p class="text-rhino-800 text-xs font-bold">$10.00</p>
+								</div>
+								<div
+									class="flex justify-between py-3 px-4 mb-8 border-b border-coolGray-200 pb-4"
+								>
+									<div
+										class="uppercase bg-orange-500 rounded-xl py-1 px-3 text-white text-xs font-bold tracking-widest"
+									>
+										Discount
+									</div>
+									<p class="text-orange-500 text-xs font-bold">20%</p>
+								</div>
+								<div class="flex justify-between items-center flex-wrap gap-4 mb-8">
+									<h2 class="text-coolGray-800 text-lg font-semibold">
+										Total
+									</h2>
+									<p class="text-purple-500 text-lg font-semibold">$167.20</p>
+								</div>
+								<div class="mb-6">
+									<label
+										class="text-sm text-coolGray-700 font-medium mb-2 block"
+										for=""
+										>Apply discount code</label
+									>
+									<div class="flex flex-wrap gap-4 mb-6">
+										<input
+											class="flex-1 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400"
+											type="text"
+											value="EASDDGFHGE5423"
+										/>
+										<a
+											class="inline-block text-sm text-purple-500 font-medium py-3 px-4 rounded-sm border border-purple-500 hover:bg-purple-500 hover:text-white transition duration-200"
+											href="#"
+											>Apply</a
+										>
+									</div>
+								</div>
+								<div>
+									<label
+										class="text-sm text-coolGray-700 font-medium mb-2 block"
+										for="textArea1"
+										>Order comment</label
+									>
+									<textarea
+										class="w-full mb-6 rounded-sm py-3 px-4 bg-white text-coolGray-700 text-sm border border-coolGray-200 outline-none focus:ring-1 ring-indigo-400 resize-none"
+										id="textArea1"
+										rows="6"
+									></textarea
+									><a
+										class="inline-block w-full px-3 py-4 rounded-sm text-center text-white text-sm font-medium bg-purple-500 hover:bg-purple-600 transition duration-200"
+										href="#"
+										>Continue to Checkout</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

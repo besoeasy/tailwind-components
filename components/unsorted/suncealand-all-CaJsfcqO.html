@@ -1,70 +1,128 @@
-<div> <section class="bg-white">
-    <nav>
-      <div class="flex py-6 px-4 md:px-14 items-center relative">
-        <button class="inline-block navbar-burger">
-          <svg width="32" height="12" viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="2" fill="black"></rect><rect y="10" width="19" height="2" fill="black"></rect></svg>
-        </button>
-        <a class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block text-2xl font-bold mr-16 xl:mr-24" href="#">
-          <img src="suncealand-assets/logos/suncealand-dark.svg" alt="">
-        </a>
-        <div class="hidden lg:flex items-center ml-auto">
-          <div class="flex items-center mr-12">
-            <a class="inline-block text-gray-200 hover:text-gray-400 transition duration-200" href="#">
-              <svg width="20" height="21" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.8027 12.3008C17.6176 11.0314 16.9713 9.3516 17 7.6152V7C17 5.14348 16.2625 3.36301 14.9497 2.05025C13.637 0.737498 11.8565 0 10 0C8.14349 0 6.36301 0.737498 5.05025 2.05025C3.7375 3.36301 3 5.14348 3 7V7.6152C3.02865 9.3516 2.38239 11.0314 1.1973 12.3008C0.505081 13.0397 0.083117 13.9909 0 15C0.000873479 15.7954 0.317225 16.5579 0.879645 17.1204C1.44206 17.6828 2.20462 17.9991 3 18H5.142C5.36235 18.8565 5.86067 19.6157 6.55884 20.1586C7.25701 20.7015 8.11559 20.9975 9 21H11C11.8844 20.9975 12.743 20.7015 13.4412 20.1586C14.1393 19.6157 14.6376 18.8565 14.858 18H17C17.3988 17.9978 17.7932 17.9165 18.1603 17.7609C18.5275 17.6052 18.8601 17.3782 19.1389 17.0931C19.4177 16.808 19.6373 16.4705 19.7847 16.0999C19.9322 15.7294 20.0047 15.3333 19.998 14.9346C19.9007 13.9489 19.4805 13.023 18.8027 12.3008ZM11 19H9C8.65056 18.9988 8.30756 18.9058 8.00539 18.7303C7.70322 18.5548 7.45248 18.3029 7.2783 18H12.7217C12.5475 18.3029 12.2968 18.5548 11.9946 18.7303C11.6924 18.9058 11.3494 18.9988 11 19ZM17 16H3C2.74633 16.0032 2.50108 15.9091 2.31458 15.7371C2.12808 15.5651 2.01448 15.3283 1.9971 15.0752C2.06452 14.557 2.2891 14.0719 2.6406 13.6852C4.18403 12.0441 5.02994 9.86785 5 7.6152V7C5 5.67392 5.52678 4.40215 6.46447 3.46447C7.40215 2.52678 8.67392 2 10 2C11.3261 2 12.5979 2.52678 13.5355 3.46447C14.4732 4.40215 15 5.67392 15 7V7.6152C14.9701 9.86785 15.816 12.0441 17.3594 13.6852C17.6938 14.055 17.916 14.5124 18 15.0039C17.9987 15.2683 17.8927 15.5215 17.7054 15.7081C17.518 15.8948 17.2644 15.9997 17 16Z" fill="currentColor"></path>
-              </svg>
-            </a>
-            <div class="w-px h-12 mx-6 bg-gray-200"></div>
-            <a class="inline-flex items-center" href="#">
-              <div class="relative w-10 h-10 rounded-full mr-4">
-                <img src="suncealand-assets/images/avatar-girl.png" alt="">
-                <div class="absolute bottom-0 right-0 -mr-px -mb-1 flex w-4 h-4 items-center justify-center rounded-full bg-indigo-500 text-white text-xs font-bold">3</div>
-              </div>
-              <span class="font-medium">Elina</span>
-            </a>
-          </div>
-          <a class="relative group inline-flex h-12 w-24 items-center justify-center border border-black rounded-lg overflow-hidden" href="#">
-            <span class="relative z-10 font-semibold text-black group-hover:text-white transition duration-500">Logout</span>
-            <div class="absolute top-0 left-0 h-full w-28 transform -translate-x-full -ml-1 group-hover:-translate-x-0 bg-black transition duration-500 ease-linear"></div>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-      <div class="navbar-backdrop fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80"></div>
-      <nav class="relative pt-8 pb-8 bg-white h-full overflow-y-auto">
-        <div class="flex flex-col px-6 h-full">
-          <a class="inline-block text-2xl font-bold ml-8 mb-16" href="#">
-            <img src="suncealand-assets/logos/suncealand-dark.svg" alt="">
-          </a>
-          <ul class="w-full mb-auto pb-16">
-            <li class="group mb-6">
-              <button class="inline-block text-left text-base font-medium text-black">
-                <div class="flex items-center">
-                  <span class="mr-3">Resources</span>
-                  <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
-                  </svg>
-                </div>
-              </button>
-              <div class="hidden group-hover:block pt-4">
-                <div class="pl-6"><a class="block mb-2 text-black" href="#">Link 1</a><a class="block mb-2 text-black" href="#">Link 1</a><a class="block text-black" href="#">Link 1</a></div>
-              </div>
-            </li>
-            <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">Community</a></li>
-            <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">Story</a></li>
-            <li><a class="inline-block text-base font-medium text-black" href="#">Pricing</a></li>
-          </ul>
-          <div class="w-full">
-            <a class="relative group inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-white border border-black" href="#">
-              <span class="text-black">Login</span>
-            </a>
-            <a class="relative inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-blue-500" href="#">
-              <span class="text-black">Logout</span>
-            </a>
-            <p class="pl-2 text-sm">2022 © Shuffle</p>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section></div>
+<div>
+	<section class="bg-white">
+		<nav>
+			<div class="flex py-6 px-4 md:px-14 items-center relative">
+				<button class="inline-block navbar-burger">
+					<svg width="32" height="12" viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="32" height="2" fill="black"></rect>
+						<rect y="10" width="19" height="2" fill="black"></rect>
+					</svg>
+				</button>
+				<a
+					class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block text-2xl font-bold mr-16 xl:mr-24"
+					href="#"
+				>
+					<img src="https://shuffle.dev/suncealand-assets/logos/suncealand-dark.svg" alt="" />
+				</a>
+				<div class="hidden lg:flex items-center ml-auto">
+					<div class="flex items-center mr-12">
+						<a
+							class="inline-block text-gray-200 hover:text-gray-400 transition duration-200"
+							href="#"
+						>
+							<svg
+								width="20"
+								height="21"
+								viewbox="0 0 20 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M18.8027 12.3008C17.6176 11.0314 16.9713 9.3516 17 7.6152V7C17 5.14348 16.2625 3.36301 14.9497 2.05025C13.637 0.737498 11.8565 0 10 0C8.14349 0 6.36301 0.737498 5.05025 2.05025C3.7375 3.36301 3 5.14348 3 7V7.6152C3.02865 9.3516 2.38239 11.0314 1.1973 12.3008C0.505081 13.0397 0.083117 13.9909 0 15C0.000873479 15.7954 0.317225 16.5579 0.879645 17.1204C1.44206 17.6828 2.20462 17.9991 3 18H5.142C5.36235 18.8565 5.86067 19.6157 6.55884 20.1586C7.25701 20.7015 8.11559 20.9975 9 21H11C11.8844 20.9975 12.743 20.7015 13.4412 20.1586C14.1393 19.6157 14.6376 18.8565 14.858 18H17C17.3988 17.9978 17.7932 17.9165 18.1603 17.7609C18.5275 17.6052 18.8601 17.3782 19.1389 17.0931C19.4177 16.808 19.6373 16.4705 19.7847 16.0999C19.9322 15.7294 20.0047 15.3333 19.998 14.9346C19.9007 13.9489 19.4805 13.023 18.8027 12.3008ZM11 19H9C8.65056 18.9988 8.30756 18.9058 8.00539 18.7303C7.70322 18.5548 7.45248 18.3029 7.2783 18H12.7217C12.5475 18.3029 12.2968 18.5548 11.9946 18.7303C11.6924 18.9058 11.3494 18.9988 11 19ZM17 16H3C2.74633 16.0032 2.50108 15.9091 2.31458 15.7371C2.12808 15.5651 2.01448 15.3283 1.9971 15.0752C2.06452 14.557 2.2891 14.0719 2.6406 13.6852C4.18403 12.0441 5.02994 9.86785 5 7.6152V7C5 5.67392 5.52678 4.40215 6.46447 3.46447C7.40215 2.52678 8.67392 2 10 2C11.3261 2 12.5979 2.52678 13.5355 3.46447C14.4732 4.40215 15 5.67392 15 7V7.6152C14.9701 9.86785 15.816 12.0441 17.3594 13.6852C17.6938 14.055 17.916 14.5124 18 15.0039C17.9987 15.2683 17.8927 15.5215 17.7054 15.7081C17.518 15.8948 17.2644 15.9997 17 16Z"
+									fill="currentColor"
+								></path>
+							</svg>
+						</a>
+						<div class="w-px h-12 mx-6 bg-gray-200"></div>
+						<a class="inline-flex items-center" href="#">
+							<div class="relative w-10 h-10 rounded-full mr-4">
+								<img
+									src="https://shuffle.dev/suncealand-assets/images/avatar-girl.png"
+									alt=""
+								/>
+								<div
+									class="absolute bottom-0 right-0 -mr-px -mb-1 flex w-4 h-4 items-center justify-center rounded-full bg-indigo-500 text-white text-xs font-bold"
+								>
+									3
+								</div>
+							</div>
+							<span class="font-medium">Elina</span>
+						</a>
+					</div>
+					<a
+						class="relative group inline-flex h-12 w-24 items-center justify-center border border-black rounded-lg overflow-hidden"
+						href="#"
+					>
+						<span
+							class="relative z-10 font-semibold text-black group-hover:text-white transition duration-500"
+							>Logout</span
+						>
+						<div
+							class="absolute top-0 left-0 h-full w-28 transform -translate-x-full -ml-1 group-hover:-translate-x-0 bg-black transition duration-500 ease-linear"
+						></div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+			<div class="navbar-backdrop fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80"></div>
+			<nav class="relative pt-8 pb-8 bg-white h-full overflow-y-auto">
+				<div class="flex flex-col px-6 h-full">
+					<a class="inline-block text-2xl font-bold ml-8 mb-16" href="#">
+						<img src="https://shuffle.dev/suncealand-assets/logos/suncealand-dark.svg" alt="" />
+					</a>
+					<ul class="w-full mb-auto pb-16">
+						<li class="group mb-6">
+							<button class="inline-block text-left text-base font-medium text-black">
+								<div class="flex items-center">
+									<span class="mr-3">Resources</span>
+									<svg
+										width="12"
+										height="7"
+										viewbox="0 0 12 7"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</div>
+							</button>
+							<div class="hidden group-hover:block pt-4">
+								<div class="pl-6">
+									<a class="block mb-2 text-black" href="#">Link 1</a
+									><a class="block mb-2 text-black" href="#">Link 1</a
+									><a class="block text-black" href="#">Link 1</a>
+								</div>
+							</div>
+						</li>
+						<li class="mb-6">
+							<a class="inline-block text-base font-medium text-black" href="#">Community</a>
+						</li>
+						<li class="mb-6">
+							<a class="inline-block text-base font-medium text-black" href="#">Story</a>
+						</li>
+						<li><a class="inline-block text-base font-medium text-black" href="#">Pricing</a></li>
+					</ul>
+					<div class="w-full">
+						<a
+							class="relative group inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-white border border-black"
+							href="#"
+						>
+							<span class="text-black">Login</span>
+						</a>
+						<a
+							class="relative inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-blue-500"
+							href="#"
+						>
+							<span class="text-black">Logout</span>
+						</a>
+						<p class="pl-2 text-sm">2022 © Shuffle</p>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</section>
+</div>

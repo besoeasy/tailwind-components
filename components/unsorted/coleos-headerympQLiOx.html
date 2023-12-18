@@ -1,315 +1,756 @@
-<div><section class="relative overflow-hidden">
-    <nav class="relative border-b border-coolGray-200 mb-4">
-      <div class="h-20 py-4 px-6 bg-white border-b border-coolGray-200">
-        <div class="container mx-auto px-4">
-          <div class="relative flex h-full -mx-4 items-center justify-between">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex w-full max-w-xs items-center px-6 border border-coolGray-200 rounded-full">
-              <input class="h-12 w-full bg-transparent border-0 text-sm text-coolGray-500 placeholder-coolGray-500 outline-none" type="search" placeholder="Search...">
-              <button class="inline-block ml-auto text-coolGray-400 hover:text-rhino-500" type="submit">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.33333 11.6667C9.27885 11.6667 11.6667 9.27885 11.6667 6.33333C11.6667 3.38782 9.27885 1 6.33333 1C3.38782 1 1 3.38782 1 6.33333C1 9.27885 3.38782 11.6667 6.33333 11.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M13.0001 13L10.1001 10.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="w-1/2 px-4">
-              <div class="flex items-center">
-                <a class="inline-block h-9 mr-6 flex-shrink-0" href="#">
-                  <img src="coleos-assets/logos/logo-coleos-2.svg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="w-1/2 px-4">
-              <div class="flex items-center justify-end">
-                <a class="group inline-flex mr-6 items-center text-sm text-coolGray-400 hover:text-purple-200" href="#">
-                  <span class="md:mr-2 text-coolGray-400 group-hover:text-coolGray-600">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 23C9.55228 23 10 22.5523 10 22C10 21.4477 9.55228 21 9 21C8.44772 21 8 21.4477 8 22C8 22.5523 8.44772 23 9 23Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1 2H5L7.68 15.39C7.77144 15.8504 8.02191 16.264 8.38755 16.5583C8.75318 16.8526 9.2107 17.009 9.68 17H19.4C19.8693 17.009 20.3268 16.8526 20.6925 16.5583C21.0581 16.264 21.3086 15.8504 21.4 15.39L23 7H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </span>
-                  <span class="hidden xl:inline-block text-rhino-700">My Cart</span>
-                </a>
-                <a class="group inline-flex items-center text-sm text-coolGray-400 hover:text-purple-200" href="#">
-                  <span class="md:mr-2 text-coolGray-400 group-hover:text-coolGray-600">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 20V18C20 16.9391 19.5786 15.9217 18.8284 15.1716C18.0783 14.4214 17.0609 14 16 14H8C6.93913 14 5.92172 14.4214 5.17157 15.1716C4.42143 15.9217 4 16.9391 4 18V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </span>
-                  <span class="hidden xl:inline-block text-rhino-700">My Account</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex w-full items-center justify-end lg:justify-center h-14 py-3 px-6 bg-white">
-        <div class="container mx-auto px-4">
-          <div class="flex items-center justify-between">
-            <div class="hidden lg:flex items-center">
-              <a class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400" href="#">
-                <span class="mr-2">Sport shoes</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-              <a class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400" href="#">
-                <span class="mr-2">Summer Collection</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-              <a class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400" href="#">
-                <span class="mr-2">Super Sales</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-              <a class="inline-flex items-center mr-10 text-sm font-bold text-rhino-700 hover:text-rhino-400" href="#">
-                <span class="mr-2">Our Bestsellers</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-              <a class="inline-flex items-center text-sm font-bold text-rhino-700 hover:text-rhino-400" href="#">
-                <span class="mr-2">Other stuff</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="hidden lg:block"><a class="text-sm font-medium text-orange-500" href="#">Hot Offers</a></div>
-          </div>
-          <button class="lg:hidden navbar-burger text-coolGray-400 hover:text-coolGray-600">
-            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M3 6H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M3 18H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <div class="flex justify-center relative mb-14">
-      <div class="hidden xl:block flex-shrink-0">
-        <div class="rounded-xl pt-24 pb-20 h-full relative">
-          <img class="absolute right-0 top-0 w-full h-full object-cover rounded-xl" src="coleos-assets/images/shoe-right-full.png" alt="">
-          <div class="max-w-xl relative z-10 flex flex-col items-start px-8 lg:px-24">
-            <div class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7">Sale</div>
-            <h1 class="text-white font-semibold text-4xl mb-4">Take care of your performance every day.</h1>
-            <p class="text-rhino-300 text-sm mb-6">Build a well-presented brand that everyone will love.</p>
-            <h2 class="text-white font-heading text-4xl font-semibold mb-6">$235.95</h2>
-            <a class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200" href="#">Go to Collection</a>
-          </div>
-        </div>
-      </div>
-      <div class="xl:flex-shrink-0 w-full max-w-6xl px-4 md:px-12 xl:px-4 xl:mx-24">
-        <div class="rounded-xl pt-24 pb-20 relative h-full">
-          <img class="absolute right-0 top-0 w-full h-full object-cover rounded-xl" src="coleos-assets/images/shoe-right-full.png" alt="">
-          <div class="sm:hidden absolute bottom-0 left-0 -mb-6 w-full">
-            <div class="flex w-full justify-center">
-              <a class="group inline-block mr-4" href="#">
-                <div class="h-12 w-12 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200">
-                  <div class="text-rhino-500 group-hover:text-white transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                      <path d="M8.5002 12.8L14.2002 18.4C14.6002 18.8 15.2002 18.8 15.6002 18.4C16.0002 18 16.0002 17.4 15.6002 17L10.7002 12L15.6002 7C16.0002 6.6 16.0002 6 15.6002 5.6C15.4002 5.4 15.2002 5.3 14.9002 5.3C14.6002 5.3 14.4002 5.4 14.2002 5.6L8.5002 11.2C8.1002 11.7 8.1002 12.3 8.5002 12.8C8.5002 12.7 8.5002 12.7 8.5002 12.8Z" fill="currentColor"></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-              <a class="group inline-block" href="#">
-                <div class="w-12 h-12 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200">
-                  <div class="text-rhino-500 group-hover:text-white transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                      <path d="M15.5397 11.29L9.87974 5.64C9.78677 5.54627 9.67617 5.47188 9.55431 5.42111C9.43246 5.37034 9.30175 5.3442 9.16974 5.3442C9.03773 5.3442 8.90702 5.37034 8.78516 5.42111C8.6633 5.47188 8.5527 5.54627 8.45974 5.64C8.27349 5.82736 8.16895 6.08081 8.16895 6.345C8.16895 6.60918 8.27349 6.86264 8.45974 7.05L13.4097 12.05L8.45974 17C8.27349 17.1874 8.16895 17.4408 8.16895 17.705C8.16895 17.9692 8.27349 18.2226 8.45974 18.41C8.55235 18.5045 8.6628 18.5797 8.78467 18.6312C8.90655 18.6826 9.03743 18.7094 9.16974 18.71C9.30204 18.7094 9.43293 18.6826 9.5548 18.6312C9.67668 18.5797 9.78712 18.5045 9.87974 18.41L15.5397 12.76C15.6412 12.6664 15.7223 12.5527 15.7777 12.4262C15.8331 12.2997 15.8617 12.1631 15.8617 12.025C15.8617 11.8869 15.8331 11.7503 15.7777 11.6238C15.7223 11.4973 15.6412 11.3836 15.5397 11.29Z" fill="currentColor"></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <a class="hidden sm:block group z-50 absolute -left-7 top-1/2 transform -translate-y-1/2" href="#">
-            <div class="h-16 w-16 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200">
-              <div class="text-rhino-500 group-hover:text-white transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                  <path d="M8.5002 12.8L14.2002 18.4C14.6002 18.8 15.2002 18.8 15.6002 18.4C16.0002 18 16.0002 17.4 15.6002 17L10.7002 12L15.6002 7C16.0002 6.6 16.0002 6 15.6002 5.6C15.4002 5.4 15.2002 5.3 14.9002 5.3C14.6002 5.3 14.4002 5.4 14.2002 5.6L8.5002 11.2C8.1002 11.7 8.1002 12.3 8.5002 12.8C8.5002 12.7 8.5002 12.7 8.5002 12.8Z" fill="currentColor"></path>
-                </svg>
-              </div>
-            </div>
-          </a>
-          <a class="hidden sm:block group z-50 absolute -right-7 top-1/2 transform -translate-y-1/2" href="#">
-            <div class="h-16 w-16 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200">
-              <div class="text-rhino-500 group-hover:text-white transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                  <path d="M15.5397 11.29L9.87974 5.64C9.78677 5.54627 9.67617 5.47188 9.55431 5.42111C9.43246 5.37034 9.30175 5.3442 9.16974 5.3442C9.03773 5.3442 8.90702 5.37034 8.78516 5.42111C8.6633 5.47188 8.5527 5.54627 8.45974 5.64C8.27349 5.82736 8.16895 6.08081 8.16895 6.345C8.16895 6.60918 8.27349 6.86264 8.45974 7.05L13.4097 12.05L8.45974 17C8.27349 17.1874 8.16895 17.4408 8.16895 17.705C8.16895 17.9692 8.27349 18.2226 8.45974 18.41C8.55235 18.5045 8.6628 18.5797 8.78467 18.6312C8.90655 18.6826 9.03743 18.7094 9.16974 18.71C9.30204 18.7094 9.43293 18.6826 9.5548 18.6312C9.67668 18.5797 9.78712 18.5045 9.87974 18.41L15.5397 12.76C15.6412 12.6664 15.7223 12.5527 15.7777 12.4262C15.8331 12.2997 15.8617 12.1631 15.8617 12.025C15.8617 11.8869 15.8331 11.7503 15.7777 11.6238C15.7223 11.4973 15.6412 11.3836 15.5397 11.29Z" fill="currentColor"></path>
-                </svg>
-              </div>
-            </div>
-          </a>
-          <div class="max-w-sm sm:max-w-xl relative z-10 flex flex-col items-start px-8 sm:px-24">
-            <div class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7">Sale</div>
-            <h1 class="text-white font-semibold text-4xl mb-4">Take care of your performance every day.</h1>
-            <p class="text-rhino-300 text-sm mb-6">Build a well-presented brand that everyone will love.</p>
-            <h2 class="text-white font-heading text-2xl lg:text-4xl font-semibold mb-6">$235.95</h2>
-            <a class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200" href="#">Go to Collection</a>
-          </div>
-        </div>
-      </div>
-      <div class="hidden xl:block flex-shrink-0">
-        <div class="rounded-xl pt-24 pb-20 h-full relative">
-          <img class="absolute right-0 top-0 w-full h-full object-cover rounded-xl" src="coleos-assets/images/shoe-right-full.png" alt="">
-          <div class="max-w-xl relative z-10 flex flex-col items-start px-8 lg:px-24">
-            <div class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7">Sale</div>
-            <h1 class="text-white font-semibold text-4xl mb-4">Take care of your performance every day.</h1>
-            <p class="text-rhino-300 text-sm mb-6">Build a well-presented brand that everyone will love.</p>
-            <h2 class="text-white font-heading text-4xl font-semibold mb-6">$235.95</h2>
-            <a class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200" href="#">Go to Collection</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mx-auto px-4">
-      <div class="flex items-center flex-wrap -mx-4 pb-6">
-        <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="flex items-center lg:justify-center gap-4">
-            <div class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <path d="M1 12.5V17.5C1 17.7652 1.10536 18.0196 1.29289 18.2071C1.48043 18.3946 1.73478 18.5 2 18.5H3C3 19.2956 3.31607 20.0587 3.87868 20.6213C4.44129 21.1839 5.20435 21.5 6 21.5C6.79565 21.5 7.55871 21.1839 8.12132 20.6213C8.68393 20.0587 9 19.2956 9 18.5H15C15 19.2956 15.3161 20.0587 15.8787 20.6213C16.4413 21.1839 17.2043 21.5 18 21.5C18.7956 21.5 19.5587 21.1839 20.1213 20.6213C20.6839 20.0587 21 19.2956 21 18.5H22C22.2652 18.5 22.5196 18.3946 22.7071 18.2071C22.8946 18.0196 23 17.7652 23 17.5V5.5C23 4.70435 22.6839 3.94129 22.1213 3.37868C21.5587 2.81607 20.7956 2.5 20 2.5H11C10.2043 2.5 9.44129 2.81607 8.87868 3.37868C8.31607 3.94129 8 4.70435 8 5.5V7.5H6C5.53426 7.5 5.07492 7.60844 4.65836 7.81672C4.24179 8.025 3.87944 8.32741 3.6 8.7L1.2 11.9C1.17075 11.9435 1.14722 11.9905 1.13 12.04L1.07 12.15C1.02587 12.2615 1.00216 12.3801 1 12.5ZM17 18.5C17 18.3022 17.0586 18.1089 17.1685 17.9444C17.2784 17.78 17.4346 17.6518 17.6173 17.5761C17.8 17.5004 18.0011 17.4806 18.1951 17.5192C18.3891 17.5578 18.5673 17.653 18.7071 17.7929C18.847 17.9327 18.9422 18.1109 18.9808 18.3049C19.0194 18.4989 18.9996 18.7 18.9239 18.8827C18.8482 19.0654 18.72 19.2216 18.5556 19.3315C18.3911 19.4414 18.1978 19.5 18 19.5C17.7348 19.5 17.4804 19.3946 17.2929 19.2071C17.1054 19.0196 17 18.7652 17 18.5ZM10 5.5C10 5.23478 10.1054 4.98043 10.2929 4.79289C10.4804 4.60536 10.7348 4.5 11 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5V16.5H20.22C19.9388 16.1906 19.5961 15.9435 19.2138 15.7743C18.8315 15.6052 18.418 15.5178 18 15.5178C17.582 15.5178 17.1685 15.6052 16.7862 15.7743C16.4039 15.9435 16.0612 16.1906 15.78 16.5H10V5.5ZM8 11.5H4L5.2 9.9C5.29315 9.7758 5.41393 9.675 5.55279 9.60557C5.69164 9.53615 5.84475 9.5 6 9.5H8V11.5ZM5 18.5C5 18.3022 5.05865 18.1089 5.16853 17.9444C5.27841 17.78 5.43459 17.6518 5.61732 17.5761C5.80004 17.5004 6.00111 17.4806 6.19509 17.5192C6.38907 17.5578 6.56725 17.653 6.70711 17.7929C6.84696 17.9327 6.9422 18.1109 6.98078 18.3049C7.01937 18.4989 6.99957 18.7 6.92388 18.8827C6.84819 19.0654 6.72002 19.2216 6.55557 19.3315C6.39112 19.4414 6.19778 19.5 6 19.5C5.73478 19.5 5.48043 19.3946 5.29289 19.2071C5.10536 19.0196 5 18.7652 5 18.5ZM3 13.5H8V16.28C7.40983 15.7526 6.63513 15.4797 5.84469 15.5209C5.05425 15.5621 4.31212 15.914 3.78 16.5H3V13.5Z" fill="white"></path>
-              </svg>
-            </div>
-            <div>
-              <p class="text-rhino-500 font-semibold">Free Shipping</p>
-              <p class="text-rhino-400 text-sm font-medium">From $45</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="flex items-center lg:justify-center gap-4">
-            <div class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <path d="M19.63 3.65C19.5138 3.55602 19.3781 3.48928 19.2327 3.45467C19.0873 3.42006 18.9361 3.41846 18.79 3.45C17.7214 3.67395 16.6183 3.6768 15.5486 3.45839C14.4789 3.23997 13.4653 2.80492 12.57 2.18C12.4026 2.06388 12.2037 2.00165 12 2.00165C11.7963 2.00165 11.5974 2.06388 11.43 2.18C10.5348 2.80492 9.52108 3.23997 8.45137 3.45839C7.38166 3.6768 6.27857 3.67395 5.21001 3.45C5.06394 3.41846 4.91267 3.42006 4.76731 3.45467C4.62194 3.48928 4.48618 3.55602 4.37001 3.65C4.25399 3.74412 4.16053 3.86304 4.0965 3.99802C4.03247 4.133 3.9995 4.28061 4.00001 4.43V11.88C3.99912 13.3138 4.34078 14.727 4.99654 16.002C5.6523 17.277 6.60319 18.3768 7.77001 19.21L11.42 21.81C11.5894 21.9306 11.7921 21.9954 12 21.9954C12.2079 21.9954 12.4106 21.9306 12.58 21.81L16.23 19.21C17.3968 18.3768 18.3477 17.277 19.0035 16.002C19.6592 14.727 20.0009 13.3138 20 11.88V4.43C20.0005 4.28061 19.9675 4.133 19.9035 3.99802C19.8395 3.86304 19.746 3.74412 19.63 3.65ZM18 11.88C18.0008 12.9948 17.7353 14.0936 17.2257 15.085C16.716 16.0765 15.977 16.9319 15.07 17.58L12 19.77L8.93001 17.58C8.02304 16.9319 7.28399 16.0765 6.77435 15.085C6.26472 14.0936 5.99924 12.9948 6.00001 11.88V5.58C8.09643 5.75944 10.196 5.27303 12 4.19C13.804 5.27303 15.9036 5.75944 18 5.58V11.88Z" fill="white"></path>
-              </svg>
-            </div>
-            <div>
-              <p class="text-rhino-500 font-semibold">Secure Shopping</p>
-              <p class="text-rhino-400 text-sm font-medium">100% Guarantee</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="flex items-center lg:justify-center gap-4">
-            <div class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <path d="M22 9.66999C21.9368 9.48708 21.822 9.32642 21.6693 9.20749C21.5167 9.08857 21.3328 9.01649 21.14 8.99999L15.45 8.16999L12.9 2.99999C12.8181 2.83092 12.6902 2.68833 12.5311 2.58857C12.3719 2.4888 12.1878 2.43588 12 2.43588C11.8121 2.43588 11.6281 2.4888 11.4689 2.58857C11.3097 2.68833 11.1819 2.83092 11.1 2.99999L8.54998 8.15999L2.85998 8.99999C2.6749 9.0263 2.5009 9.10396 2.35773 9.22415C2.21455 9.34435 2.10794 9.50227 2.04998 9.67999C1.99692 9.85367 1.99216 10.0385 2.03621 10.2147C2.08025 10.3909 2.17144 10.5517 2.29998 10.68L6.42998 14.68L5.42998 20.36C5.39428 20.5475 5.41297 20.7412 5.48385 20.9184C5.55473 21.0956 5.67483 21.2489 5.82998 21.36C5.98119 21.4681 6.15955 21.5319 6.34503 21.5443C6.5305 21.5566 6.71575 21.5171 6.87998 21.43L12 18.76L17.1 21.44C17.2403 21.5192 17.3988 21.5605 17.56 21.56C17.7718 21.5607 17.9784 21.4942 18.15 21.37C18.3051 21.2589 18.4252 21.1056 18.4961 20.9284C18.567 20.7512 18.5857 20.5575 18.55 20.37L17.55 14.69L21.68 10.69C21.8244 10.5677 21.9311 10.4069 21.9877 10.2263C22.0444 10.0458 22.0486 9.85287 22 9.66999ZM15.85 13.67C15.7327 13.7834 15.645 13.9238 15.5944 14.079C15.5439 14.2341 15.532 14.3992 15.56 14.56L16.28 18.75L12.52 16.75C12.3753 16.673 12.2139 16.6327 12.05 16.6327C11.8861 16.6327 11.7247 16.673 11.58 16.75L7.81998 18.75L8.53998 14.56C8.56791 14.3992 8.55609 14.2341 8.50554 14.079C8.45499 13.9238 8.36725 13.7834 8.24998 13.67L5.24998 10.67L9.45998 10.06C9.62198 10.0375 9.77598 9.97553 9.90848 9.87964C10.041 9.78376 10.1479 9.65683 10.22 9.50999L12 5.69999L13.88 9.51999C13.952 9.66683 14.059 9.79376 14.1915 9.88964C14.324 9.98553 14.478 10.0475 14.64 10.07L18.85 10.68L15.85 13.67Z" fill="white"></path>
-              </svg>
-            </div>
-            <div>
-              <p class="text-rhino-500 font-semibold">Customer Satisfaction</p>
-              <p class="text-rhino-400 text-sm font-medium">100% Positive Feedbacks</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-          <div class="flex items-center lg:justify-center gap-4">
-            <div class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <path d="M12 3C10.6868 3 9.38642 3.25866 8.17317 3.7612C6.95991 4.26375 5.85752 5.00035 4.92893 5.92893C3.05357 7.8043 2 10.3478 2 13V20C2 20.2652 2.10536 20.5196 2.29289 20.7071C2.48043 20.8946 2.73478 21 3 21H6C6.79565 21 7.55871 20.6839 8.12132 20.1213C8.68393 19.5587 9 18.7956 9 18V16C9 15.2044 8.68393 14.4413 8.12132 13.8787C7.55871 13.3161 6.79565 13 6 13H4C4 10.8783 4.84285 8.84344 6.34315 7.34315C7.84344 5.84285 9.87827 5 12 5C14.1217 5 16.1566 5.84285 17.6569 7.34315C19.1571 8.84344 20 10.8783 20 13H18C17.2044 13 16.4413 13.3161 15.8787 13.8787C15.3161 14.4413 15 15.2044 15 16V18C15 18.7956 15.3161 19.5587 15.8787 20.1213C16.4413 20.6839 17.2044 21 18 21H21C21.2652 21 21.5196 20.8946 21.7071 20.7071C21.8946 20.5196 22 20.2652 22 20V13C22 10.3478 20.9464 7.8043 19.0711 5.92893C17.1957 4.05357 14.6522 3 12 3ZM6 15C6.26522 15 6.51957 15.1054 6.70711 15.2929C6.89464 15.4804 7 15.7348 7 16V18C7 18.2652 6.89464 18.5196 6.70711 18.7071C6.51957 18.8946 6.26522 19 6 19H4V15H6ZM20 19H18C17.7348 19 17.4804 18.8946 17.2929 18.7071C17.1054 18.5196 17 18.2652 17 18V16C17 15.7348 17.1054 15.4804 17.2929 15.2929C17.4804 15.1054 17.7348 15 18 15H20V19Z" fill="white"></path>
-              </svg>
-            </div>
-            <div>
-              <p class="text-rhino-500 font-semibold">Support</p>
-              <p class="text-rhino-400 text-sm font-medium">Online Support 24/7</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-md z-50">
-      <div class="navbar-backdrop fixed inset-0 bg-purple-800 opacity-70"></div>
-      <nav class="relative flex flex-col pt-12 pb-6 px-8 w-full h-full bg-white overflow-y-auto">
-        <div class="flex mb-12 items-center">
-          <a class="inline-block mr-auto" href="#">
-            <img class="h-8" src="coleos-assets/logos/logo-coleos-2.svg" alt="">
-          </a>
-          <a class="navbar-close" href="#">
-            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 18L18 6M6 6L18 18" stroke="#252E4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="flex w-full max-w-xs items-center px-6 border border-coolGray-200 rounded-full">
-          <input class="h-12 w-full bg-transparent border-0 text-sm text-coolGray-500 placeholder-coolGray-500 outline-none" type="search" placeholder="Search...">
-          <button class="inline-block ml-auto text-coolGray-400 hover:text-rhino-500" type="submit">
-            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.33333 11.6667C9.27885 11.6667 11.6667 9.27885 11.6667 6.33333C11.6667 3.38782 9.27885 1 6.33333 1C3.38782 1 1 3.38782 1 6.33333C1 9.27885 3.38782 11.6667 6.33333 11.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M13.0001 13L10.1001 10.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="py-12 mb-autoq">
-          <ul class="flex-col">
-            <li class="mb-3">
-              <a class="group mr-6 inline-flex items-center text-base" href="#">
-                <span class="mr-2 text-purple-400">
-                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.3334 13.3333V12C13.3334 11.2928 13.0525 10.6145 12.5524 10.1144C12.0523 9.61429 11.374 9.33334 10.6667 9.33334H5.33341C4.62617 9.33334 3.94789 9.61429 3.4478 10.1144C2.9477 10.6145 2.66675 11.2928 2.66675 12V13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M7.99992 6.66667C9.47268 6.66667 10.6666 5.47276 10.6666 4C10.6666 2.52724 9.47268 1.33334 7.99992 1.33334C6.52716 1.33334 5.33325 2.52724 5.33325 4C5.33325 5.47276 6.52716 6.66667 7.99992 6.66667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </span>
-                <span class="font-semibold text-rhino-700">Login</span>
-              </a>
-            </li>
-            <li class="mb-3">
-              <a class="group mr-6 inline-flex items-center text-base" href="#">
-                <span class="mr-2 text-purple-400">
-                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1208_8162)">
-                      <path d="M14.1941 3.07455C13.8536 2.73389 13.4493 2.46365 13.0043 2.27927C12.5594 2.0949 12.0824 2 11.6008 2C11.1191 2 10.6422 2.0949 10.1972 2.27927C9.75224 2.46365 9.34795 2.73389 9.00745 3.07455L8.30078 3.78122L7.59411 3.07455C6.90632 2.38676 5.97347 2.00036 5.00078 2.00036C4.02809 2.00036 3.09524 2.38676 2.40745 3.07455C1.71965 3.76235 1.33325 4.69519 1.33325 5.66788C1.33325 6.64057 1.71965 7.57342 2.40745 8.26122L3.11411 8.96788L8.30078 14.1545L13.4874 8.96788L14.1941 8.26122C14.5348 7.92071 14.805 7.51643 14.9894 7.07145C15.1738 6.62648 15.2687 6.14954 15.2687 5.66788C15.2687 5.18623 15.1738 4.70929 14.9894 4.26431C14.805 3.81934 14.5348 3.41505 14.1941 3.07455V3.07455Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                  </svg>
-                </span>
-                <span class="font-semibold text-rhino-700">Favorite</span>
-              </a>
-            </li>
-            <li class="mb-12">
-              <a class="inline-flex items-center text-base text-purple-400 hover:text-purple-200" href="#">
-                <span class="mr-2 text-purple-400">
-                  <svg width="18" height="17" viewbox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.99992 15.3333C7.36811 15.3333 7.66658 15.0349 7.66658 14.6667C7.66658 14.2985 7.36811 14 6.99992 14C6.63173 14 6.33325 14.2985 6.33325 14.6667C6.33325 15.0349 6.63173 15.3333 6.99992 15.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M14.3334 15.3333C14.7016 15.3333 15.0001 15.0349 15.0001 14.6667C15.0001 14.2985 14.7016 14 14.3334 14C13.9652 14 13.6667 14.2985 13.6667 14.6667C13.6667 15.0349 13.9652 15.3333 14.3334 15.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M1.66675 1.33334H4.33341L6.12008 10.26C6.18104 10.5669 6.34802 10.8426 6.59178 11.0389C6.83554 11.2351 7.14055 11.3393 7.45341 11.3333H13.9334C14.2463 11.3393 14.5513 11.2351 14.7951 11.0389C15.0388 10.8426 15.2058 10.5669 15.2667 10.26L16.3334 4.66667H5.00008" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </span>
-                <span class="font-semibold text-rhino-700">Cart</span>
-              </a>
-            </li>
-            <li class="mb-4">
-              <a class="flex items-center text-base font-bold text-rhino-700" href="#">
-                <span class="mr-2">Sport shoes</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </li>
-            <li class="mb-4">
-              <a class="flex items-center text-base font-bold text-rhino-700" href="#">
-                <span class="mr-2">Summer Collection</span>
-                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </li>
-            <li class="mb-4"><a class="flex items-center text-base font-bold text-rhino-700" href="#">Products</a></li>
-            <li class="mb-4"><a class="flex items-center text-base font-bold text-rhino-700" href="#">Blog</a></li>
-            <li class="mb-4"><a class="flex items-center text-base font-bold text-rhino-700" href="#">Shop</a></li>
-            <li><a class="flex items-center text-base font-bold text-rhino-700 hover:text-rhino-400" href="#">Our Bestsellers</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-center text-sm text-coolGray-400">Coleos Shuffle 2023</p>
-        </div>
-      </nav>
-    </div>
-  </section> </div>
+<div>
+	<section class="relative overflow-hidden">
+		<nav class="relative border-b border-coolGray-200 mb-4">
+			<div class="h-20 py-4 px-6 bg-white border-b border-coolGray-200">
+				<div class="container mx-auto px-4">
+					<div class="relative flex h-full -mx-4 items-center justify-between">
+						<div
+							class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex w-full max-w-xs items-center px-6 border border-coolGray-200 rounded-full"
+						>
+							<input
+								class="h-12 w-full bg-transparent border-0 text-sm text-coolGray-500 placeholder-coolGray-500 outline-none"
+								type="search"
+								placeholder="Search..."
+							/>
+							<button
+								class="inline-block ml-auto text-coolGray-400 hover:text-rhino-500"
+								type="submit"
+							>
+								<svg
+									width="14"
+									height="14"
+									viewbox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6.33333 11.6667C9.27885 11.6667 11.6667 9.27885 11.6667 6.33333C11.6667 3.38782 9.27885 1 6.33333 1C3.38782 1 1 3.38782 1 6.33333C1 9.27885 3.38782 11.6667 6.33333 11.6667Z"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										d="M13.0001 13L10.1001 10.1"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+							</button>
+						</div>
+						<div class="w-1/2 px-4">
+							<div class="flex items-center">
+								<a class="inline-block h-9 mr-6 flex-shrink-0" href="#">
+									<img
+										src="https://shuffle.dev/coleos-assets/logos/logo-coleos-2.svg"
+										alt=""
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="w-1/2 px-4">
+							<div class="flex items-center justify-end">
+								<a
+									class="group inline-flex mr-6 items-center text-sm text-coolGray-400 hover:text-purple-200"
+									href="#"
+								>
+									<span
+										class="md:mr-2 text-coolGray-400 group-hover:text-coolGray-600"
+									>
+										<svg
+											width="24"
+											height="24"
+											viewbox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9 23C9.55228 23 10 22.5523 10 22C10 21.4477 9.55228 21 9 21C8.44772 21 8 21.4477 8 22C8 22.5523 8.44772 23 9 23Z"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+											<path
+												d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+											<path
+												d="M1 2H5L7.68 15.39C7.77144 15.8504 8.02191 16.264 8.38755 16.5583C8.75318 16.8526 9.2107 17.009 9.68 17H19.4C19.8693 17.009 20.3268 16.8526 20.6925 16.5583C21.0581 16.264 21.3086 15.8504 21.4 15.39L23 7H6"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+										</svg>
+									</span>
+									<span class="hidden xl:inline-block text-rhino-700"
+										>My Cart</span
+									>
+								</a>
+								<a
+									class="group inline-flex items-center text-sm text-coolGray-400 hover:text-purple-200"
+									href="#"
+								>
+									<span
+										class="md:mr-2 text-coolGray-400 group-hover:text-coolGray-600"
+									>
+										<svg
+											width="24"
+											height="24"
+											viewbox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M20 20V18C20 16.9391 19.5786 15.9217 18.8284 15.1716C18.0783 14.4214 17.0609 14 16 14H8C6.93913 14 5.92172 14.4214 5.17157 15.1716C4.42143 15.9217 4 16.9391 4 18V20"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+											<path
+												d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+										</svg>
+									</span>
+									<span class="hidden xl:inline-block text-rhino-700"
+										>My Account</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex w-full items-center justify-end lg:justify-center h-14 py-3 px-6 bg-white">
+				<div class="container mx-auto px-4">
+					<div class="flex items-center justify-between">
+						<div class="hidden lg:flex items-center">
+							<a
+								class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+							>
+								<span class="mr-2">Sport shoes</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+							<a
+								class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+							>
+								<span class="mr-2">Summer Collection</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+							<a
+								class="inline-flex mr-10 items-center text-sm font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+							>
+								<span class="mr-2">Super Sales</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+							<a
+								class="inline-flex items-center mr-10 text-sm font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+							>
+								<span class="mr-2">Our Bestsellers</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+							<a
+								class="inline-flex items-center text-sm font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+							>
+								<span class="mr-2">Other stuff</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+						</div>
+						<div class="hidden lg:block">
+							<a class="text-sm font-medium text-orange-500" href="#">Hot Offers</a>
+						</div>
+					</div>
+					<button class="lg:hidden navbar-burger text-coolGray-400 hover:text-coolGray-600">
+						<svg
+							width="24"
+							height="24"
+							viewbox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M3 12H21"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+							<path
+								d="M3 6H21"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+							<path
+								d="M3 18H21"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</nav>
+		<div class="flex justify-center relative mb-14">
+			<div class="hidden xl:block flex-shrink-0">
+				<div class="rounded-xl pt-24 pb-20 h-full relative">
+					<img
+						class="absolute right-0 top-0 w-full h-full object-cover rounded-xl"
+						src="https://shuffle.dev/coleos-assets/images/shoe-right-full.png"
+						alt=""
+					/>
+					<div class="max-w-xl relative z-10 flex flex-col items-start px-8 lg:px-24">
+						<div
+							class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7"
+						>
+							Sale
+						</div>
+						<h1 class="text-white font-semibold text-4xl mb-4">
+							Take care of your performance every day.
+						</h1>
+						<p class="text-rhino-300 text-sm mb-6">
+							Build a well-presented brand that everyone will love.
+						</p>
+						<h2 class="text-white font-heading text-4xl font-semibold mb-6">$235.95</h2>
+						<a
+							class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200"
+							href="#"
+							>Go to Collection</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="xl:flex-shrink-0 w-full max-w-6xl px-4 md:px-12 xl:px-4 xl:mx-24">
+				<div class="rounded-xl pt-24 pb-20 relative h-full">
+					<img
+						class="absolute right-0 top-0 w-full h-full object-cover rounded-xl"
+						src="https://shuffle.dev/coleos-assets/images/shoe-right-full.png"
+						alt=""
+					/>
+					<div class="sm:hidden absolute bottom-0 left-0 -mb-6 w-full">
+						<div class="flex w-full justify-center">
+							<a class="group inline-block mr-4" href="#">
+								<div
+									class="h-12 w-12 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200"
+								>
+									<div
+										class="text-rhino-500 group-hover:text-white transition duration-200"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewbox="0 0 24 24"
+											fill="none"
+										>
+											<path
+												d="M8.5002 12.8L14.2002 18.4C14.6002 18.8 15.2002 18.8 15.6002 18.4C16.0002 18 16.0002 17.4 15.6002 17L10.7002 12L15.6002 7C16.0002 6.6 16.0002 6 15.6002 5.6C15.4002 5.4 15.2002 5.3 14.9002 5.3C14.6002 5.3 14.4002 5.4 14.2002 5.6L8.5002 11.2C8.1002 11.7 8.1002 12.3 8.5002 12.8C8.5002 12.7 8.5002 12.7 8.5002 12.8Z"
+												fill="currentColor"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<a class="group inline-block" href="#">
+								<div
+									class="w-12 h-12 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200"
+								>
+									<div
+										class="text-rhino-500 group-hover:text-white transition duration-200"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewbox="0 0 24 24"
+											fill="none"
+										>
+											<path
+												d="M15.5397 11.29L9.87974 5.64C9.78677 5.54627 9.67617 5.47188 9.55431 5.42111C9.43246 5.37034 9.30175 5.3442 9.16974 5.3442C9.03773 5.3442 8.90702 5.37034 8.78516 5.42111C8.6633 5.47188 8.5527 5.54627 8.45974 5.64C8.27349 5.82736 8.16895 6.08081 8.16895 6.345C8.16895 6.60918 8.27349 6.86264 8.45974 7.05L13.4097 12.05L8.45974 17C8.27349 17.1874 8.16895 17.4408 8.16895 17.705C8.16895 17.9692 8.27349 18.2226 8.45974 18.41C8.55235 18.5045 8.6628 18.5797 8.78467 18.6312C8.90655 18.6826 9.03743 18.7094 9.16974 18.71C9.30204 18.7094 9.43293 18.6826 9.5548 18.6312C9.67668 18.5797 9.78712 18.5045 9.87974 18.41L15.5397 12.76C15.6412 12.6664 15.7223 12.5527 15.7777 12.4262C15.8331 12.2997 15.8617 12.1631 15.8617 12.025C15.8617 11.8869 15.8331 11.7503 15.7777 11.6238C15.7223 11.4973 15.6412 11.3836 15.5397 11.29Z"
+												fill="currentColor"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<a class="hidden sm:block group z-50 absolute -left-7 top-1/2 transform -translate-y-1/2" href="#">
+						<div
+							class="h-16 w-16 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200"
+						>
+							<div class="text-rhino-500 group-hover:text-white transition duration-200">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewbox="0 0 24 24"
+									fill="none"
+								>
+									<path
+										d="M8.5002 12.8L14.2002 18.4C14.6002 18.8 15.2002 18.8 15.6002 18.4C16.0002 18 16.0002 17.4 15.6002 17L10.7002 12L15.6002 7C16.0002 6.6 16.0002 6 15.6002 5.6C15.4002 5.4 15.2002 5.3 14.9002 5.3C14.6002 5.3 14.4002 5.4 14.2002 5.6L8.5002 11.2C8.1002 11.7 8.1002 12.3 8.5002 12.8C8.5002 12.7 8.5002 12.7 8.5002 12.8Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</div>
+						</div>
+					</a>
+					<a class="hidden sm:block group z-50 absolute -right-7 top-1/2 transform -translate-y-1/2" href="#">
+						<div
+							class="h-16 w-16 flex items-center justify-center bg-white rounded-full group-hover:bg-purple-500 transition duration-200"
+						>
+							<div class="text-rhino-500 group-hover:text-white transition duration-200">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewbox="0 0 24 24"
+									fill="none"
+								>
+									<path
+										d="M15.5397 11.29L9.87974 5.64C9.78677 5.54627 9.67617 5.47188 9.55431 5.42111C9.43246 5.37034 9.30175 5.3442 9.16974 5.3442C9.03773 5.3442 8.90702 5.37034 8.78516 5.42111C8.6633 5.47188 8.5527 5.54627 8.45974 5.64C8.27349 5.82736 8.16895 6.08081 8.16895 6.345C8.16895 6.60918 8.27349 6.86264 8.45974 7.05L13.4097 12.05L8.45974 17C8.27349 17.1874 8.16895 17.4408 8.16895 17.705C8.16895 17.9692 8.27349 18.2226 8.45974 18.41C8.55235 18.5045 8.6628 18.5797 8.78467 18.6312C8.90655 18.6826 9.03743 18.7094 9.16974 18.71C9.30204 18.7094 9.43293 18.6826 9.5548 18.6312C9.67668 18.5797 9.78712 18.5045 9.87974 18.41L15.5397 12.76C15.6412 12.6664 15.7223 12.5527 15.7777 12.4262C15.8331 12.2997 15.8617 12.1631 15.8617 12.025C15.8617 11.8869 15.8331 11.7503 15.7777 11.6238C15.7223 11.4973 15.6412 11.3836 15.5397 11.29Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</div>
+						</div>
+					</a>
+					<div class="max-w-sm sm:max-w-xl relative z-10 flex flex-col items-start px-8 sm:px-24">
+						<div
+							class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7"
+						>
+							Sale
+						</div>
+						<h1 class="text-white font-semibold text-4xl mb-4">
+							Take care of your performance every day.
+						</h1>
+						<p class="text-rhino-300 text-sm mb-6">
+							Build a well-presented brand that everyone will love.
+						</p>
+						<h2 class="text-white font-heading text-2xl lg:text-4xl font-semibold mb-6">$235.95</h2>
+						<a
+							class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200"
+							href="#"
+							>Go to Collection</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="hidden xl:block flex-shrink-0">
+				<div class="rounded-xl pt-24 pb-20 h-full relative">
+					<img
+						class="absolute right-0 top-0 w-full h-full object-cover rounded-xl"
+						src="https://shuffle.dev/coleos-assets/images/shoe-right-full.png"
+						alt=""
+					/>
+					<div class="max-w-xl relative z-10 flex flex-col items-start px-8 lg:px-24">
+						<div
+							class="px-4 py-1 rounded-full bg-white uppercase text-rhino-700 text-xs font-bold tracking-widest font-heading mb-7"
+						>
+							Sale
+						</div>
+						<h1 class="text-white font-semibold text-4xl mb-4">
+							Take care of your performance every day.
+						</h1>
+						<p class="text-rhino-300 text-sm mb-6">
+							Build a well-presented brand that everyone will love.
+						</p>
+						<h2 class="text-white font-heading text-4xl font-semibold mb-6">$235.95</h2>
+						<a
+							class="py-3 px-4 bg-purple-500 rounded-sm text-center text-white text-sm font-medium hover:bg-purple-600 transition duration-200"
+							href="#"
+							>Go to Collection</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mx-auto px-4">
+			<div class="flex items-center flex-wrap -mx-4 pb-6">
+				<div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+					<div class="flex items-center lg:justify-center gap-4">
+						<div
+							class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewbox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M1 12.5V17.5C1 17.7652 1.10536 18.0196 1.29289 18.2071C1.48043 18.3946 1.73478 18.5 2 18.5H3C3 19.2956 3.31607 20.0587 3.87868 20.6213C4.44129 21.1839 5.20435 21.5 6 21.5C6.79565 21.5 7.55871 21.1839 8.12132 20.6213C8.68393 20.0587 9 19.2956 9 18.5H15C15 19.2956 15.3161 20.0587 15.8787 20.6213C16.4413 21.1839 17.2043 21.5 18 21.5C18.7956 21.5 19.5587 21.1839 20.1213 20.6213C20.6839 20.0587 21 19.2956 21 18.5H22C22.2652 18.5 22.5196 18.3946 22.7071 18.2071C22.8946 18.0196 23 17.7652 23 17.5V5.5C23 4.70435 22.6839 3.94129 22.1213 3.37868C21.5587 2.81607 20.7956 2.5 20 2.5H11C10.2043 2.5 9.44129 2.81607 8.87868 3.37868C8.31607 3.94129 8 4.70435 8 5.5V7.5H6C5.53426 7.5 5.07492 7.60844 4.65836 7.81672C4.24179 8.025 3.87944 8.32741 3.6 8.7L1.2 11.9C1.17075 11.9435 1.14722 11.9905 1.13 12.04L1.07 12.15C1.02587 12.2615 1.00216 12.3801 1 12.5ZM17 18.5C17 18.3022 17.0586 18.1089 17.1685 17.9444C17.2784 17.78 17.4346 17.6518 17.6173 17.5761C17.8 17.5004 18.0011 17.4806 18.1951 17.5192C18.3891 17.5578 18.5673 17.653 18.7071 17.7929C18.847 17.9327 18.9422 18.1109 18.9808 18.3049C19.0194 18.4989 18.9996 18.7 18.9239 18.8827C18.8482 19.0654 18.72 19.2216 18.5556 19.3315C18.3911 19.4414 18.1978 19.5 18 19.5C17.7348 19.5 17.4804 19.3946 17.2929 19.2071C17.1054 19.0196 17 18.7652 17 18.5ZM10 5.5C10 5.23478 10.1054 4.98043 10.2929 4.79289C10.4804 4.60536 10.7348 4.5 11 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5V16.5H20.22C19.9388 16.1906 19.5961 15.9435 19.2138 15.7743C18.8315 15.6052 18.418 15.5178 18 15.5178C17.582 15.5178 17.1685 15.6052 16.7862 15.7743C16.4039 15.9435 16.0612 16.1906 15.78 16.5H10V5.5ZM8 11.5H4L5.2 9.9C5.29315 9.7758 5.41393 9.675 5.55279 9.60557C5.69164 9.53615 5.84475 9.5 6 9.5H8V11.5ZM5 18.5C5 18.3022 5.05865 18.1089 5.16853 17.9444C5.27841 17.78 5.43459 17.6518 5.61732 17.5761C5.80004 17.5004 6.00111 17.4806 6.19509 17.5192C6.38907 17.5578 6.56725 17.653 6.70711 17.7929C6.84696 17.9327 6.9422 18.1109 6.98078 18.3049C7.01937 18.4989 6.99957 18.7 6.92388 18.8827C6.84819 19.0654 6.72002 19.2216 6.55557 19.3315C6.39112 19.4414 6.19778 19.5 6 19.5C5.73478 19.5 5.48043 19.3946 5.29289 19.2071C5.10536 19.0196 5 18.7652 5 18.5ZM3 13.5H8V16.28C7.40983 15.7526 6.63513 15.4797 5.84469 15.5209C5.05425 15.5621 4.31212 15.914 3.78 16.5H3V13.5Z"
+									fill="white"
+								></path>
+							</svg>
+						</div>
+						<div>
+							<p class="text-rhino-500 font-semibold">Free Shipping</p>
+							<p class="text-rhino-400 text-sm font-medium">From $45</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+					<div class="flex items-center lg:justify-center gap-4">
+						<div
+							class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewbox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M19.63 3.65C19.5138 3.55602 19.3781 3.48928 19.2327 3.45467C19.0873 3.42006 18.9361 3.41846 18.79 3.45C17.7214 3.67395 16.6183 3.6768 15.5486 3.45839C14.4789 3.23997 13.4653 2.80492 12.57 2.18C12.4026 2.06388 12.2037 2.00165 12 2.00165C11.7963 2.00165 11.5974 2.06388 11.43 2.18C10.5348 2.80492 9.52108 3.23997 8.45137 3.45839C7.38166 3.6768 6.27857 3.67395 5.21001 3.45C5.06394 3.41846 4.91267 3.42006 4.76731 3.45467C4.62194 3.48928 4.48618 3.55602 4.37001 3.65C4.25399 3.74412 4.16053 3.86304 4.0965 3.99802C4.03247 4.133 3.9995 4.28061 4.00001 4.43V11.88C3.99912 13.3138 4.34078 14.727 4.99654 16.002C5.6523 17.277 6.60319 18.3768 7.77001 19.21L11.42 21.81C11.5894 21.9306 11.7921 21.9954 12 21.9954C12.2079 21.9954 12.4106 21.9306 12.58 21.81L16.23 19.21C17.3968 18.3768 18.3477 17.277 19.0035 16.002C19.6592 14.727 20.0009 13.3138 20 11.88V4.43C20.0005 4.28061 19.9675 4.133 19.9035 3.99802C19.8395 3.86304 19.746 3.74412 19.63 3.65ZM18 11.88C18.0008 12.9948 17.7353 14.0936 17.2257 15.085C16.716 16.0765 15.977 16.9319 15.07 17.58L12 19.77L8.93001 17.58C8.02304 16.9319 7.28399 16.0765 6.77435 15.085C6.26472 14.0936 5.99924 12.9948 6.00001 11.88V5.58C8.09643 5.75944 10.196 5.27303 12 4.19C13.804 5.27303 15.9036 5.75944 18 5.58V11.88Z"
+									fill="white"
+								></path>
+							</svg>
+						</div>
+						<div>
+							<p class="text-rhino-500 font-semibold">Secure Shopping</p>
+							<p class="text-rhino-400 text-sm font-medium">100% Guarantee</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+					<div class="flex items-center lg:justify-center gap-4">
+						<div
+							class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewbox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M22 9.66999C21.9368 9.48708 21.822 9.32642 21.6693 9.20749C21.5167 9.08857 21.3328 9.01649 21.14 8.99999L15.45 8.16999L12.9 2.99999C12.8181 2.83092 12.6902 2.68833 12.5311 2.58857C12.3719 2.4888 12.1878 2.43588 12 2.43588C11.8121 2.43588 11.6281 2.4888 11.4689 2.58857C11.3097 2.68833 11.1819 2.83092 11.1 2.99999L8.54998 8.15999L2.85998 8.99999C2.6749 9.0263 2.5009 9.10396 2.35773 9.22415C2.21455 9.34435 2.10794 9.50227 2.04998 9.67999C1.99692 9.85367 1.99216 10.0385 2.03621 10.2147C2.08025 10.3909 2.17144 10.5517 2.29998 10.68L6.42998 14.68L5.42998 20.36C5.39428 20.5475 5.41297 20.7412 5.48385 20.9184C5.55473 21.0956 5.67483 21.2489 5.82998 21.36C5.98119 21.4681 6.15955 21.5319 6.34503 21.5443C6.5305 21.5566 6.71575 21.5171 6.87998 21.43L12 18.76L17.1 21.44C17.2403 21.5192 17.3988 21.5605 17.56 21.56C17.7718 21.5607 17.9784 21.4942 18.15 21.37C18.3051 21.2589 18.4252 21.1056 18.4961 20.9284C18.567 20.7512 18.5857 20.5575 18.55 20.37L17.55 14.69L21.68 10.69C21.8244 10.5677 21.9311 10.4069 21.9877 10.2263C22.0444 10.0458 22.0486 9.85287 22 9.66999ZM15.85 13.67C15.7327 13.7834 15.645 13.9238 15.5944 14.079C15.5439 14.2341 15.532 14.3992 15.56 14.56L16.28 18.75L12.52 16.75C12.3753 16.673 12.2139 16.6327 12.05 16.6327C11.8861 16.6327 11.7247 16.673 11.58 16.75L7.81998 18.75L8.53998 14.56C8.56791 14.3992 8.55609 14.2341 8.50554 14.079C8.45499 13.9238 8.36725 13.7834 8.24998 13.67L5.24998 10.67L9.45998 10.06C9.62198 10.0375 9.77598 9.97553 9.90848 9.87964C10.041 9.78376 10.1479 9.65683 10.22 9.50999L12 5.69999L13.88 9.51999C13.952 9.66683 14.059 9.79376 14.1915 9.88964C14.324 9.98553 14.478 10.0475 14.64 10.07L18.85 10.68L15.85 13.67Z"
+									fill="white"
+								></path>
+							</svg>
+						</div>
+						<div>
+							<p class="text-rhino-500 font-semibold">Customer Satisfaction</p>
+							<p class="text-rhino-400 text-sm font-medium">100% Positive Feedbacks</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+					<div class="flex items-center lg:justify-center gap-4">
+						<div
+							class="flex-shrink-0 bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewbox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M12 3C10.6868 3 9.38642 3.25866 8.17317 3.7612C6.95991 4.26375 5.85752 5.00035 4.92893 5.92893C3.05357 7.8043 2 10.3478 2 13V20C2 20.2652 2.10536 20.5196 2.29289 20.7071C2.48043 20.8946 2.73478 21 3 21H6C6.79565 21 7.55871 20.6839 8.12132 20.1213C8.68393 19.5587 9 18.7956 9 18V16C9 15.2044 8.68393 14.4413 8.12132 13.8787C7.55871 13.3161 6.79565 13 6 13H4C4 10.8783 4.84285 8.84344 6.34315 7.34315C7.84344 5.84285 9.87827 5 12 5C14.1217 5 16.1566 5.84285 17.6569 7.34315C19.1571 8.84344 20 10.8783 20 13H18C17.2044 13 16.4413 13.3161 15.8787 13.8787C15.3161 14.4413 15 15.2044 15 16V18C15 18.7956 15.3161 19.5587 15.8787 20.1213C16.4413 20.6839 17.2044 21 18 21H21C21.2652 21 21.5196 20.8946 21.7071 20.7071C21.8946 20.5196 22 20.2652 22 20V13C22 10.3478 20.9464 7.8043 19.0711 5.92893C17.1957 4.05357 14.6522 3 12 3ZM6 15C6.26522 15 6.51957 15.1054 6.70711 15.2929C6.89464 15.4804 7 15.7348 7 16V18C7 18.2652 6.89464 18.5196 6.70711 18.7071C6.51957 18.8946 6.26522 19 6 19H4V15H6ZM20 19H18C17.7348 19 17.4804 18.8946 17.2929 18.7071C17.1054 18.5196 17 18.2652 17 18V16C17 15.7348 17.1054 15.4804 17.2929 15.2929C17.4804 15.1054 17.7348 15 18 15H20V19Z"
+									fill="white"
+								></path>
+							</svg>
+						</div>
+						<div>
+							<p class="text-rhino-500 font-semibold">Support</p>
+							<p class="text-rhino-400 text-sm font-medium">Online Support 24/7</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-md z-50">
+			<div class="navbar-backdrop fixed inset-0 bg-purple-800 opacity-70"></div>
+			<nav class="relative flex flex-col pt-12 pb-6 px-8 w-full h-full bg-white overflow-y-auto">
+				<div class="flex mb-12 items-center">
+					<a class="inline-block mr-auto" href="#">
+						<img class="h-8" src="https://shuffle.dev/coleos-assets/logos/logo-coleos-2.svg" alt="" />
+					</a>
+					<a class="navbar-close" href="#">
+						<svg
+							width="24"
+							height="24"
+							viewbox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M6 18L18 6M6 6L18 18"
+								stroke="#252E4A"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+					</a>
+				</div>
+				<div class="flex w-full max-w-xs items-center px-6 border border-coolGray-200 rounded-full">
+					<input
+						class="h-12 w-full bg-transparent border-0 text-sm text-coolGray-500 placeholder-coolGray-500 outline-none"
+						type="search"
+						placeholder="Search..."
+					/>
+					<button class="inline-block ml-auto text-coolGray-400 hover:text-rhino-500" type="submit">
+						<svg
+							width="14"
+							height="14"
+							viewbox="0 0 14 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M6.33333 11.6667C9.27885 11.6667 11.6667 9.27885 11.6667 6.33333C11.6667 3.38782 9.27885 1 6.33333 1C3.38782 1 1 3.38782 1 6.33333C1 9.27885 3.38782 11.6667 6.33333 11.6667Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+							<path
+								d="M13.0001 13L10.1001 10.1"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<div class="py-12 mb-autoq">
+					<ul class="flex-col">
+						<li class="mb-3">
+							<a class="group mr-6 inline-flex items-center text-base" href="#">
+								<span class="mr-2 text-purple-400">
+									<svg
+										width="16"
+										height="16"
+										viewbox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M13.3334 13.3333V12C13.3334 11.2928 13.0525 10.6145 12.5524 10.1144C12.0523 9.61429 11.374 9.33334 10.6667 9.33334H5.33341C4.62617 9.33334 3.94789 9.61429 3.4478 10.1144C2.9477 10.6145 2.66675 11.2928 2.66675 12V13.3333"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M7.99992 6.66667C9.47268 6.66667 10.6666 5.47276 10.6666 4C10.6666 2.52724 9.47268 1.33334 7.99992 1.33334C6.52716 1.33334 5.33325 2.52724 5.33325 4C5.33325 5.47276 6.52716 6.66667 7.99992 6.66667Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+								</span>
+								<span class="font-semibold text-rhino-700">Login</span>
+							</a>
+						</li>
+						<li class="mb-3">
+							<a class="group mr-6 inline-flex items-center text-base" href="#">
+								<span class="mr-2 text-purple-400">
+									<svg
+										width="16"
+										height="16"
+										viewbox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_1208_8162)">
+											<path
+												d="M14.1941 3.07455C13.8536 2.73389 13.4493 2.46365 13.0043 2.27927C12.5594 2.0949 12.0824 2 11.6008 2C11.1191 2 10.6422 2.0949 10.1972 2.27927C9.75224 2.46365 9.34795 2.73389 9.00745 3.07455L8.30078 3.78122L7.59411 3.07455C6.90632 2.38676 5.97347 2.00036 5.00078 2.00036C4.02809 2.00036 3.09524 2.38676 2.40745 3.07455C1.71965 3.76235 1.33325 4.69519 1.33325 5.66788C1.33325 6.64057 1.71965 7.57342 2.40745 8.26122L3.11411 8.96788L8.30078 14.1545L13.4874 8.96788L14.1941 8.26122C14.5348 7.92071 14.805 7.51643 14.9894 7.07145C15.1738 6.62648 15.2687 6.14954 15.2687 5.66788C15.2687 5.18623 15.1738 4.70929 14.9894 4.26431C14.805 3.81934 14.5348 3.41505 14.1941 3.07455V3.07455Z"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
+										</g>
+									</svg>
+								</span>
+								<span class="font-semibold text-rhino-700">Favorite</span>
+							</a>
+						</li>
+						<li class="mb-12">
+							<a
+								class="inline-flex items-center text-base text-purple-400 hover:text-purple-200"
+								href="#"
+							>
+								<span class="mr-2 text-purple-400">
+									<svg
+										width="18"
+										height="17"
+										viewbox="0 0 18 17"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.99992 15.3333C7.36811 15.3333 7.66658 15.0349 7.66658 14.6667C7.66658 14.2985 7.36811 14 6.99992 14C6.63173 14 6.33325 14.2985 6.33325 14.6667C6.33325 15.0349 6.63173 15.3333 6.99992 15.3333Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M14.3334 15.3333C14.7016 15.3333 15.0001 15.0349 15.0001 14.6667C15.0001 14.2985 14.7016 14 14.3334 14C13.9652 14 13.6667 14.2985 13.6667 14.6667C13.6667 15.0349 13.9652 15.3333 14.3334 15.3333Z"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<path
+											d="M1.66675 1.33334H4.33341L6.12008 10.26C6.18104 10.5669 6.34802 10.8426 6.59178 11.0389C6.83554 11.2351 7.14055 11.3393 7.45341 11.3333H13.9334C14.2463 11.3393 14.5513 11.2351 14.7951 11.0389C15.0388 10.8426 15.2058 10.5669 15.2667 10.26L16.3334 4.66667H5.00008"
+											stroke="currentColor"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+								</span>
+								<span class="font-semibold text-rhino-700">Cart</span>
+							</a>
+						</li>
+						<li class="mb-4">
+							<a class="flex items-center text-base font-bold text-rhino-700" href="#">
+								<span class="mr-2">Sport shoes</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li class="mb-4">
+							<a class="flex items-center text-base font-bold text-rhino-700" href="#">
+								<span class="mr-2">Summer Collection</span>
+								<svg
+									width="16"
+									height="16"
+									viewbox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.47315 10.36L12.2398 6.58667C12.3023 6.52469 12.3519 6.45096 12.3857 6.36972C12.4196 6.28848 12.437 6.20134 12.437 6.11333C12.437 6.02533 12.4196 5.93819 12.3857 5.85695C12.3519 5.77571 12.3023 5.70198 12.2398 5.64C12.1149 5.51583 11.9459 5.44614 11.7698 5.44614C11.5937 5.44614 11.4247 5.51583 11.2998 5.64L7.96648 8.94L4.66648 5.64C4.54157 5.51583 4.3726 5.44614 4.19648 5.44614C4.02036 5.44614 3.85139 5.51583 3.72648 5.64C3.66349 5.70174 3.61337 5.77537 3.57904 5.85662C3.54471 5.93787 3.52685 6.02513 3.52648 6.11333C3.52685 6.20154 3.54471 6.28879 3.57904 6.37004C3.61337 6.45129 3.66349 6.52492 3.72648 6.58667L7.49315 10.36C7.55557 10.4277 7.63134 10.4817 7.71568 10.5186C7.80001 10.5556 7.89108 10.5746 7.98315 10.5746C8.07521 10.5746 8.16628 10.5556 8.25062 10.5186C8.33495 10.4817 8.41072 10.4277 8.47315 10.36Z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li class="mb-4">
+							<a class="flex items-center text-base font-bold text-rhino-700" href="#"
+								>Products</a
+							>
+						</li>
+						<li class="mb-4">
+							<a class="flex items-center text-base font-bold text-rhino-700" href="#"
+								>Blog</a
+							>
+						</li>
+						<li class="mb-4">
+							<a class="flex items-center text-base font-bold text-rhino-700" href="#"
+								>Shop</a
+							>
+						</li>
+						<li>
+							<a
+								class="flex items-center text-base font-bold text-rhino-700 hover:text-rhino-400"
+								href="#"
+								>Our Bestsellers</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<p class="text-center text-sm text-coolGray-400">Coleos Shuffle 2023</p>
+				</div>
+			</nav>
+		</div>
+	</section>
+</div>
