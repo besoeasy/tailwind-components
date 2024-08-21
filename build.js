@@ -13,6 +13,8 @@ const allowedDomains = [
   "https://tailwind.besoeasy.com/",
   "https://cdn.tailwindcss.com",
   "https://unpkg.com",
+  "https://i.ibb.co",
+  "https://images.unsplash.com/",
 ];
 
 async function checkAssetsForDomains(filePath) {

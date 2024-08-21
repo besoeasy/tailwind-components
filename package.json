@@ -4,7 +4,7 @@
   "description": "tailwind-components",
   "main": "index.js",
   "scripts": {
-    "copy": "rm -rf dist && mkdir -p dist && cp -r components/* dist && mkdir -p dist/assets && cp -r assets/* dist/assets",
+    "copy": "rm -rf dist && mkdir -p dist && cp -r components/* dist",
     "build": "npm run copy && node build.js && npx prettier --print-width 200 --write dist "
   },
   "repository": {
