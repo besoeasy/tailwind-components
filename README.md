@@ -8,10 +8,7 @@ We welcome contributions to enhance this project. Please ensure that any images 
 
 To safeguard our visitors from potential security threats, all images must be uploaded via imgbb or Unsplash. The following domains are permitted:
 
-https://tailwind.besoeasy.com/
-https://cdn.tailwindcss.com
-https://unpkg.com
-https://i.ibb.co
-https://images.unsplash.com/
+https://imgbb.com/
+https://unsplash.com/
 
 For any issues or feature requests, feel free to open an issue on our GitHub repository.
